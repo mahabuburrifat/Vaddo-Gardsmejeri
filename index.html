@@ -18,8 +18,9 @@
     </style>
 </head>
 <body>
-    <header class="poppins px-8 py-16">
-        <nav class="bg-[url('./VADDO IMAGES/Hero-1024x768.jpg')] min-w-max min-h-max">
+    <header class="poppins px-6 py-16 space-y-24">
+<!-- navbar & background image section -->
+        <nav class="bg-[url('./VADDO IMAGES/Hero-1024x768.jpg')] hreo w-full min-h-screen">
             <div class="navbar font-bold">
                 <div class="flex-1">
                     <a class="link link-secondary no-underline">THE FARM'S PRODUCTS</a>
@@ -36,9 +37,8 @@
                           <li> <a class="link link-secondary no-underline">VISITOR MAPS</a></li>
                         </ul>
                       </div>
-                      <div class="ml-20">
-                        <h1 class="font-extrabold text-4xl">VADDO GARDSMEJERI</h1>
-                        <p class="text-center">MATHANTVERK SEDAN 1912</p>
+                      <div class="ml-20 bg-slate-700">
+                        <img class="w-96 " src="./VADDO IMAGES/Vaddo-gardsmejeri-logo-vit-kopia.png" alt="">
                       </div>
                 </div>
                 <div class="flex-none">
@@ -54,7 +54,56 @@
                   </div>
                 </div>
               </div>
+
+              <div class="hero mt-96">
+                <div class="hero-content flex-col lg:flex-row">
+                  <div>
+                    <p class="py-24 font-bold text-xl text-center">WELCOME TO VÄDDÖ GÅRDSMEJERI</p>
+                    <h1 class="text-6xl font-bold text-center">REAL FOOD FROM THE EDLUND FAMILY'S FARM IN ROSLAGEN<h1>  
+                  </div>
+                </div>
+              </div>
         </nav>
+<!-- welcome to a real farm section -->
+        <section  class="bg-lime-700 hero min-h-screen text-white p-20">
+                <div class="hero-content flex-col grid grid-cols-2 gap-32 lg:flex-row-reverse">
+                  <div class="space-y-10 text-center">
+                    <p class="font-semibold">STOP BY AND SAY HELLO TO US AND THE ANIMALS</p>
+                    <h1 class="text-5xl font-bold">WELCOME <br> TO A REAL FARM</h1>
+                    <p class="font-normal">The farm has been run by the Edlund family since 1912. Here we work KRAV-ecologically and sustainably with the entire chain from pasture to stomach. <br>
+                        From the work in the field, to the farm's own milk production, further into the dairy to be processed into our farm products. The whole farm has a circular approach and today there are around 60 happy cows on the farm.</p>
+
+                    <p>On the farm, you can visit our animals in Lilla Bondgården, shop in the farm shop, have a coffee in our Dairy Café, eat at Bonden & Burgaren or enjoy the farm's ice cream at Bondens Glasskalas, beautifully located by Väddö Kanal.</p>
+
+                    <abbr title="welcome to our farm">
+                        <button class="btn btn-outline btn-secondary text-xl font-semibold mt-12">WELCOME TO OUR FARM</button>
+                    </abbr>
+                  </div>
+        <!-- welcome dairy image container -->          
+                  <div class="space-y-28">
+                    <div class="text-2xl font-medium flex gap-6">
+                        <img src="./VADDO IMAGES/traktor.png" alt="">
+                        <h2>Organic farming</h2>
+                    </div>
+                    <div class="text-2xl font-medium flex gap-6">
+                        <img class="w-14 h-10" src="./VADDO IMAGES/ko.png" alt="">
+                        <h2>Take care of our animals</h2>
+                    </div>
+                    <div class="text-2xl font-medium flex gap-6">
+                        <img src="./VADDO IMAGES/mjolk.png" alt="">
+                        <h2>Dairy Café & Farm Shop</h2>
+                    </div>
+                    <div class="text-2xl font-medium flex gap-6">
+                        <img src="./VADDO IMAGES/kott.png" alt="">
+                        <h2>OEat with us!</h2>
+                    </div>
+                    <div class="text-2xl font-medium flex gap-6">
+                        <img src="./VADDO IMAGES/mjolk.png" alt="">
+                        <h2>The dairy</h2>
+                    </div>
+                </div>
+                </div>
+        </section>
     </header>
 </body>
 </html>
