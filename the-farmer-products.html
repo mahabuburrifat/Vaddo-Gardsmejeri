@@ -29,48 +29,57 @@
 <body>
 
 
-<header class="roboto-mono px-2 py-2">
+<header class="poppins px-2">
+
+    <!-- font top nav bar -->
+    <nav class="bg-green-800  p-4">
+        <ul class="flex justify-around font-semibold">
+            <li class="hover:text-orange-400"><a class="link hover:text-orange-500 no-underline text-white" href="index.html">HOME</a></li>
+            <div class="dropdown dropdown-hover mr-6">
+                <li class="">
+                    <a class="link hover:text-orange-500 no-underline text-white">ABOUT US</a>
+                </li>
+                    <ul  class="dropdown-content menu rounded-box z-[1] w-52 p-2 shadow">
+                        <li> <a href="/about-the-farmhouse.html" class="link hover:text-zinc-500 no-underline text-white">THE FARMHOUSE</a></li>
+                        <li> <a href="/about-the-dairy.html" class="link hover:text-zinc-500 no-underline text-white">THE DAIRY</a></li>
+                    </ul>
+            </div>
+            <li class=""><a class="link hover:text-orange-500 no-underline text-white" href="/contact-us.html">CONTACT US</a></li>
+            <li class=""><a class="link hover:text-orange-500 no-underline text-white" href="">MORE</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- navbar & full background image section -->
+
     <nav class="bg-yellow-500 min-h-screen text-white p-12">
         <nav class="">
-            <div class="flex justify-around">
-            <div class="flex">
-                <div>
-                    <a href="index.html" class="link link-error no-underline text-white">THE FARM'S PRODUCTS</a>
+            <div class="navbar font-bold flex justify-around lg:flex-row-reverse">
+                <div class="">
+                    <img class="w-96 " src="./VADDO IMAGES/Vaddo-gardsmejeri-logo-vit-kopia.png" alt="">
                 </div>
-                <div class="dropdown dropdown-hover ml-8">
-                    <div  class=""><a class="link link-secondary no-underline text-white">EAT & EXPERIENCE</a></div>
-                    <ul class="dropdown-content menu rounded-box z-[1] w-52 p-2 shadow">
-                      <li><a href="/eat-&-experience.html" class="link link-secondary no-underline text-white">THE FARMER & THE BARGHER</a></li>
-                      <li> <a href="/eat-&-experience2.html" class="link link-secondary no-underline text-white">FARMER'S ICE-CREAM PARTY</a></li>
-                      <li> <a href="/eat-&-experience3.html" class="link link-secondary no-underline text-white">FARMER'S ICE-CREAM STALLS</a></li>
-                      <li> <a href="/eat-&-experience4.html" class="link link-secondary no-underline text-white">DAIRY CAFE & FARM SHOP</a></li>
-                      <li> <a href="" class="link link-secondary no-underline text-white">EVENTS</a></li>
-                      <li> <a href="" class="link link-secondary no-underline text-white">CAMP WITH US</a></li>
-                      <li> <a href="" class="link link-secondary no-underline text-white">GROUPS</a></li>
-                      <li> <a href="" class="link link-secondary no-underline text-white">VISITOR MAPS</a></li>
-                    </ul>
-                  </div>
-            </div>
-            <div>
-                <img class="w-96 " src="./VADDO IMAGES/Vaddo-gardsmejeri-logo-vit-kopia.png" alt="">
-            </div>
-            <div class="flex space-x-6">
-                <div class="dropdown dropdown-hover mr-6">
-                    <div class=""><a class="link link-secondary no-underline text-white">ABOUT US</a></div>
-                    <ul  class="dropdown-content menu rounded-box z-[1] w-52 p-2 shadow">
-                      <li> <a href="" class="link link-secondary no-underline text-white">THE FARMHOUSE</a></li>
-                      <li> <a href="" class="link link-secondary no-underline text-white">THE DAIRY</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <a href="" class="link link-secondary no-underline text-white">CONTACT US</a>
+                <div class="flex-none">
+                    <div class="dropdown dropdown-hover">
+                        <div  class=""><a class="link hover:text-zinc-500 no-underline text-white">EAT & EXPERIENCE</a></div>
+                        <ul class="dropdown-content menu rounded-box z-[1] w-52 p-2 shadow">
+                          <li><a href="/eat-&-experience.html" class="link hover:text-zinc-500 no-underline text-white">THE FARMER & THE BARGHER</a></li>
+                          <li> <a href="/eat-&-experience2.html" class="link hover:text-zinc-500 no-underline text-white">FARMER'S ICE-CREAM PARTY</a></li>
+                          <li> <a href="/eat-&-experience3.html" class="link hover:text-zinc-500 no-underline text-white">FARMER'S ICE-CREAM STALLS</a></li>
+                          <li> <a href="/eat-&-experience4.html" class="link hover:text-zinc-500 no-underline text-white">DAIRY CAFE & FARM SHOP</a></li>
+                          <li> <a href="" class="link hover:text-zinc-500 no-underline text-white">EVENTS</a></li>
+                          <li> <a href="" class="link hover:text-zinc-500 no-underline text-white">CAMP WITH US</a></li>
+                          <li> <a href="" class="link hover:text-zinc-500 no-underline text-white">GROUPS</a></li>
+                          <li> <a href="" class="link hover:text-zinc-500 no-underline text-white">VISITOR MAPS</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-          </div>
 
               <hr class="mt-72">
 
+
             <!-- card translate rotate divison -->
+
               <div class="grid grid-cols-6 gap-6 p-10">
                 <a href="">
                     <button class="transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:duration-300 font-semibold">
@@ -109,8 +118,7 @@
 
 
     <!-- square & circle card  heading card -->
-<div>
-                
+<div>              
     <div class="">
         <div class="mt-28 p-6 flex justify-center space-x-24 lg:flex-row">
                             <img class="w-96 rounded-3xl"
@@ -539,65 +547,78 @@
 </header>
 
 
-<footer class="bg-slate-400 p-12 text-white">
+<!-- start footer -->
+
+<footer class="bg-green-800  p-16 text-white">
     <div class="flex justify-center">
         <img class="w-96" src="./VADDO IMAGES/Vaddo-gardsmejeri-logo-vit-kopia.png" alt="">
     </div>
-    <hr class="mt-16 mb-16">
-         
-    <footer class="footer text-base-content text-white">
-        <aside class="space-y-2">
-           <div class="flex space-x-3">
-            <img class="w-4 h-4 rounded-full" src="./VADDO IMAGES/th (7).jpeg" alt="">
-           <a href=""><h2 class="font-bold">The farm's products</h2></a>
-           </div>
-           <div class="flex space-x-3">
-            <img class="w-4 h-4 rounded-full" src="./VADDO IMAGES/th (7).jpeg" alt="">
-           <a href=""><h2 class="font-bold">Eat & experience</h2></a>
-           </div>
-           <div class="flex space-x-3">
-            <img class="w-4 h-4 rounded-full" src="./VADDO IMAGES/th (7).jpeg" alt="">
-           <a href=""><h2 class="font-bold">About us</h2></a>
-           </div>
-           <div class="flex space-x-3">
-            <img class="w-4 h-4 rounded-full" src="./VADDO IMAGES/th (7).jpeg" alt="">
-           <a href=""><h2 class="font-bold">Contact Us</h2></a>
-           </div>
-        </aside>
-        <nav class="space-y-2">
-           <div class="flex space-x-3">
-            <img class="w-4 h-4 rounded-full" src="./VADDO IMAGES/call.jpeg" alt="">
-            <a href=""><h3>0176-501 03</h3></a>
-           </div>
-           <div class="flex space-x-3">
-            <img class="w-4 h-4 rounded-full" src="./VADDO IMAGES/th (6).jpeg" alt="">
-            <a href=""><h3> info@vaddogardsmejeri.se</h3></a>
-           </div>
-           <div class="flex space-x-3">
-            <img class="w-4 h-4 rounded-full" src="./VADDO IMAGES/th (5).jpeg" alt="">
-            <a href=""><h3>Hammarbyvägen 34 <br>
-                764 91 Aries</h3></a>
-           </div>
-        </nav>
-        <nav>
-            <div>
-                <h1 class="font-bold text-center">Visit us</h1>
-                <div class="flex justify-center space-x-2 mt-3">
-                    <a href=""><img title="Facebook" class="w-6 h-6 rounded-3xl" src="./VADDO IMAGES/th.jpeg" alt=""></a>
-                    <a href=""><img title="Instagram" class="w-6 h-6 rounded-3xl" src="./VADDO IMAGES/th (1).jpeg" alt=""></a>
-                    <a href=""><img title="Tiktok" class="w-6 h-6 rounded-3xl" src="./VADDO IMAGES/th (2).jpeg" alt=""></a>
-                </div>
-            </div>
-        </nav>
-        <nav>
+
+    <hr class="mt-24 mb-24">
+    
+    <div class="flex justify-around">
+        <nav class="flex flex-col">
+            <h6 class="footer-title text-xl">Information</h6>
+            <a class="link link-hover" href="">Refund Policy</a>
+            <a class="link link-hover" href="">Privacy Policy</a>
+            <a class="link link-hover" href="">Conditions of Use</a>
+            <a class="link link-hover" href="">About Us</a>
+            <a class="link link-hover" href="">Contact Us</a>
+          </nav>
+          <nav class="flex flex-col">
+            <h6 class="footer-title text-xl">Customer service</h6>
+            <a class="link link-hover" href="">Notices</a>
+            <a class="link link-hover" href="">Blog</a>
+            <a class="link link-hover" href="">Recently viewed products</a>
+          </nav>
+          <nav class="flex flex-col">
+            <h6 class="footer-title text-xl">My account</h6>
+            <a class="link link-hover" href="">My account</a>
+            <a class="link link-hover" href="">Orders</a>
+            <a class="link link-hover" href="">Address</a>
+            <a class="link link-hover" href="">Shopping cart</a>
+          </nav>
+        <form>
+            <h6 class="footer-title text-xl mb-5">Follow us</h6>
             <div class="flex space-x-3">
-                <img class="w-4 h-4 rounded-full" src="./VADDO IMAGES/th (7).jpeg" alt="">
-               <a href=""><h2 class="font-bold">Privacy policy</h2></a>
+              <a href="">
+                <img title="Facebook" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/facebook (2).jpeg" alt="">
+              </a>
+              <a href="">
+                <img title="Twiter" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/twiter.jpeg" alt="">
+              </a>
+              <a href="">
+                <img title="Wi-Fi" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/wifi.jpeg" alt="">
+              </a>
+              <a href="">
+                <img title="Youtube" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/youtube.jpeg" alt="">
+              </a>
+              <a href="">
+                <img title="Instagram" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/instagram.jpeg" alt="">
+              </a>
             </div>
-        </nav>
-      </footer>
-        <h2 class="mt-20">Produced by <b>nobox web agency in Karlstad</b></h2>
-        <p class="mt-5 text-center">© 2024 Väddö Gårdsmejeri</p>
+
+
+            <hr class="mt-6 mb-6 w-full">
+
+
+            <fieldset class="form-control w-8">
+              <label class="label">
+                <span class="text-white">Enter your email address</span>
+              </label>
+              <div class="join">
+                <input placeholder="Enter your email here" class="text-black p-3 outline-black outline-offset-2 text-xl join-item w-64" type="text" name="" id="">
+                <button class="btn btn-primary join-item font-bold text-xl">Subscribe</button>
+              </div>
+            </fieldset>
+          </form>
+    </div>
+
+    <hr class="mt-12 mb-12">
+
+    <h2 class="mt-12">Produced by <b>nobox web agency in Karlstad</b></h2>
+    <p class="mt-5 text-center">© 2024 Väddö Gårdsmejeri</p>
+    
 </footer>
 
 
