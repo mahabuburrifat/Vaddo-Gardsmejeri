@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Farmer & The Burgher</title>
+    <title>Contact Us</title>
 
     <!-- daisyui and tailwinds link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -35,20 +35,20 @@
     <header class="poppins px-2">
 
                  <!-- font top nav bar -->
-        <nav class="bg-green-500  p-4">
+        <nav class="p-4">
             <ul class="flex justify-around font-semibold">
-                <li class="hover:text-orange-400"><a class="link hover:text-orange-500 no-underline text-white" href="index.html">HOME</a></li>
+                <li class="hover:text-orange-400"><a class="link hover:text-orange-500 no-underline" href="index.html">HOME</a></li>
                 <div class="dropdown dropdown-hover mr-6">
                     <li class="">
-                        <a class="link hover:text-orange-500 no-underline text-white">ABOUT US</a>
+                        <a class="link hover:text-orange-500 no-underline">ABOUT US</a>
                     </li>
                         <ul  class="dropdown-content menu rounded-box z-[1] w-52 p-2 shadow">
                             <li> <a href="about-the-farmhouse.html" class="link hover:text-orange-500 no-underline text-white">THE FARMHOUSE</a></li>
                             <li> <a href="about-the-dairy.html" class="link hover:text-orange-500 no-underline text-white">THE DAIRY</a></li>
                         </ul>
                 </div>
-                <li class=""><a class="link hover:text-orange-500 no-underline text-white" href="contact-us.html">CONTACT US</a></li>
-                <li class=""><a class="link hover:text-orange-500 no-underline text-white" href="">MORE</a></li>
+                <li class=""><a class="link hover:text-orange-500 no-underline" href="contact-us.html">CONTACT US</a></li>
+                <li class=""><a class="link hover:text-orange-500 no-underline" href="">MORE</a></li>
             </ul>
         </nav>
 
@@ -92,11 +92,12 @@
 
 
             <!-- contact us & google map -->
-            <div class="hero-content flex-col mt-20 p-16  justify-around lg:flex-row-reverse">
+            <div class="flex flex-col mt-20 p-16 justify-between bg-gray-100 lg:flex-row-reverse">
                 <!-- google map -->
                 <img class="w-[540px]"
                   src="" alt="google map"/>
-                <div class="roboto-mono space-y-16 text-gray-400 ">
+
+                <div class="roboto-mono space-y-16 text-gray-700 ">
                     <h1 class="text-3xl font-bold">CONTACT US</h1>
                     <p class="roboto-mono text-xl">
                         Feel free to contact us and we will answer your questions.
@@ -119,71 +120,59 @@
 
     <!-- start footer -->
 
-    <footer style="background-color:  rgb(124, 124, 6);" class="p-2 px-6 text-white">
-      <div class="flex justify-center">
-        <img class="w-96" src="./VADDO IMAGES/Vaddo-gardsmejeri-logo-vit-kopia.png" alt="">
-    </div>
-
-    <hr class="mt-24 mb-24">
-    
-    <div class="flex justify-around">
-        <nav class="flex flex-col">
-            <h6 class="footer-title text-xl">Information</h6>
-            <a class="link link-hover" href="">Refund Policy</a>
-            <a class="link link-hover" href="">Privacy Policy</a>
-            <a class="link link-hover" href="">Conditions of Use</a>
-            <a class="link link-hover" href="">About Us</a>
-            <a class="link link-hover" href="">Contact Us</a>
-          </nav>
-          <nav class="flex flex-col">
-            <h6 class="footer-title text-xl">Customer service</h6>
-            <a class="link link-hover" href="">Notices</a>
-            <a class="link link-hover" href="">Blog</a>
-            <a class="link link-hover" href="">Recently viewed products</a>
-          </nav>
-           
-        <form>
-            <h6 class="footer-title text-xl mb-5">Follow us</h6>
-            <div class="flex space-x-3">
-              <a href="">
-                <img title="Facebook" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/facebook (2).jpeg" alt="">
-              </a>
-              <a href="">
-                <img title="Twiter" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/twiter.jpeg" alt="">
-              </a>
-              <a href="">
-                <img title="Wi-Fi" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/wifi.jpeg" alt="">
-              </a>
-              <a href="">
-                <img title="Youtube" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/youtube.jpeg" alt="">
-              </a>
-              <a href="">
-                <img title="Instagram" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/instagram.jpeg" alt="">
-              </a>
-            </div>
-
-
-            <hr class="mt-6 mb-6 w-full">
-
-
-            <fieldset class="form-control w-8">
-              <label class="label">
-                <span>Enter your email address</span>
-              </label>
-              <div class="join">
-                <input placeholder="Enter your email here" class="text-black p-3 outline-black outline-offset-2 text-xl join-item w-64" type="text" name="" id="">
-                <button class="btn btn-primary join-item font-bold text-xl">Subscribe</button>
+    <footer class="bg-gray-400 px-6 p-2 text-gray-50">
+      <div class="flex justify-center mt-12">
+          <img class="w-96" src="./VADDO IMAGES/Vaddo-gardsmejeri-logo-vit-kopia.png" alt="">
+      </div>
+  
+      <hr class="mt-16 mb-16">
+      
+      <div class="footer justify-around">
+          <nav>
+              <h6 class="footer-title text-xl">Information</h6>
+              <a class="link link-hover" href="">Refund Policy</a>
+              <a class="link link-hover" href="">Privacy Policy</a>
+              <a class="link link-hover" href="">Conditions of Use</a>
+              <a class="link link-hover" href="">About Us</a>
+              <a class="link link-hover" href="">Contact Us</a>
+            </nav>
+            <nav>
+              <h6 class="footer-title text-xl">Customer service</h6>
+              <a class="link link-hover" href="">Notices</a>
+              <a class="link link-hover" href="">Blog</a>
+              <a class="link link-hover" href="">Recently viewed products</a>
+            </nav>
+          <form>
+              <h6 class="footer-title text-xl">Follow us</h6>
+              <div class="flex space-x-3">
+                <a href="">
+                  <img title="Facebook" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/facebook (2).jpeg" alt="">
+                </a>
+                <a href="">
+                  <img title="Twiter" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/twiter.jpeg" alt="">
+                </a>
+                <a href="">
+                  <img title="Youtube" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/youtube.jpeg" alt="">
+                </a>
+                <a href="">
+                  <img title="Instagram" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/instagram.jpeg" alt="">
+                </a>
               </div>
-            </fieldset>
-          </form>
-    </div>
-
-    <hr class="mt-12 mb-6">
-
-    <h2 class="mt-12">Produced by <b>nobox web agency in Karlstad</b></h2>
-    <p class="mt-5 text-center text-gray-400">© 2024 Väddö Gårdsmejeri</p>
-        
-    </footer>
+            </form>
+            <nav>
+              <h6 class="footer-title text-xl">Download our apps</h6>
+              <a class="link link-hover" href="">
+                  <img class="w-56 rounded-full" src="./VADDO IMAGES/th (10).jpeg" alt="">
+              </a>
+          </nav>
+          </div>
+          
+            <hr class="mt-10 mb-6">
+      
+          <p class="mt-5 text-center text-gray-200">@All Rights Reserved,  <br>  2024, Väddö Gårdsmejeri.</p>
+      
+  </footer>
+  
     
     <!-- footer end -->
 
