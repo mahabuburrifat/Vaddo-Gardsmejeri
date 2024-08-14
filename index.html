@@ -66,7 +66,7 @@
     <header class="poppins px-2">
 
         <!-- font top nav bar -->
-        <nav class="p-4">
+        <nav class="p-4 max-sm:flex-col">
             <ul class="flex justify-around font-semibold">
                 <li class="hover:text-orange-400"><a class="link hover:text-orange-500 no-underline" href="index.html">HOME</a></li>
                 <div class="dropdown dropdown-hover mr-6">
@@ -88,14 +88,14 @@
         <nav class="">
 
             <!-- bg nav part -->
-            <div class="navbar font-bold flex justify-around">
+            <div class="font-bold flex justify-around max-sm:flex-col space-y-6">
                 <div>
-                    <a href="the-farmer-products.html" class="link hover:text-orange-500 no-underline text-white">THE FARM'S PRODUCTS</a>
+                    <a href="the-farmer-products.html" class="link hover:text-orange-500 no-underline text-white max-sm:flex justify-center">THE FARM'S PRODUCTS</a>
                 </div>
-                <div class="">
-                    <img class="w-96 " src="./VADDO IMAGES/Vaddo-gardsmejeri-logo-vit-kopia.png" alt="">
+                <div class="max-sm:flex justify-center">
+                    <img class="w-96 max-sm:w-44" src="./VADDO IMAGES/Vaddo-gardsmejeri-logo-vit-kopia.png" alt="">
                 </div>
-                <div class="flex-none">
+                <div class="flex-none max-sm:flex justify-center">
                     <div class="dropdown dropdown-hover">
                         <div  class=""><a class="link hover:text-orange-500 no-underline text-white">EAT & EXPERIENCE</a></div>
                         <ul class="dropdown-content menu rounded-box z-[1] w-52 p-2 shadow">
@@ -118,7 +118,7 @@
                 <div class="hero-content flex-col lg:flex-row">
                   <div>
                     <p class="py-24 font-bold text-xl text-center">WELCOME TO VÄDDÖ GÅRDSMEJERI</p>
-                    <h1 class="text-6xl font-bold text-center">REAL FOOD FROM THE EDLUND FAMILY'S FARM IN ROSLAGEN<h1>  
+                    <h1 class="md:text-6xl font-bold text-center">REAL FOOD FROM THE EDLUND FAMILY'S FARM IN ROSLAGEN<h1>  
                   </div>
                 </div>
               </div>
@@ -128,11 +128,11 @@
 
 <!-- welcome to a real farm section 2nd section -->
 
-        <section style="color: brown;" class="bg-gray-100 hero min-h-screen p-20 mt-12 mb-12">
-                <div class="hero-content flex-col grid grid-cols-2 gap-32 lg:flex-row-reverse">
+        <section style="color: brown;" class="bg-gray-300 hero min-h-screen p-20 mt-4 mb-4">
+                <div class="md:hero-content md:grid md:grid-cols-2 gap-32 lg:flex-row-reverse">
                   <div class="space-y-10 text-center">
                     <p class="font-semibold">STOP BY AND SAY HELLO TO US AND THE ANIMALS</p>
-                    <h1 class="text-5xl font-bold">WELCOME <br> TO A REAL FARM</h1>
+                    <h1 class="md:text-5xl font-bold">WELCOME <br> TO A REAL FARM</h1>
                     <p class="font-normal">The farm has been run by the Edlund family since 1912. Here we work KRAV-ecologically and sustainably with the entire chain from pasture to stomach. <br>
                         From the work in the field, to the farm's own milk production, further into the dairy to be processed into our farm products. The whole farm has a circular approach and today there are around 60 happy cows on the farm.</p>
 
@@ -140,12 +140,13 @@
 
                     <a href="contact-us.html">
                         <abbr title="welcome to our farm">
-                            <button class="btn btn-outline btn-error text-xl font-semibold mt-12">WELCOME TO OUR FARM</button>
+                            <button class="p-2 rounded-xl text-brawn border-2 border-gray-400 bg-stone-200 hover:border-2 hover:border-white hover:bg-[#973f24] hover:text-white text-xl font-semibold mt-12 mb-12 max-sm:h-20">WELCOME TO OUR FARM</button>
                         </abbr>
+
                     </a>
                   </div>
         <!-- welcome dairy image container -->          
-                  <div class="space-y-28">
+                  <div class="space-y-28 max-sm:mt-16">
                     <div class="text-2xl font-medium flex gap-6">
                         <img src="./VADDO IMAGES/traktor.png" alt="">
                         <h2>Organic farming</h2>
@@ -173,65 +174,67 @@
 
 <!-- farm's product 3rd section -->
 
-        <section class="hero min-h-screen bg-gray-100">
+        <section class="hero min-h-screen bg-gray-300">
             <div>
-                <div class="hero-content flex justify-evenly gap-24 p-16 lg:flex-row-reverse">
+                <div class="hero-content flex justify-evenly gap-24 p-16 lg:flex-row-reverse max-sm:flex-col-reverse">
                     <div>
                         <img src="./VADDO IMAGES/Bild3.png" alt="">
                     </div>
                     <div class="text-center space-y-6">
-                        <h1 style="color: brown;" class="text-5xl font-bold">THE FARM'S PRODUCTS</h1>
+                        <h1 style="color: brown;" class="md:text-5xl font-bold">THE FARM'S PRODUCTS</h1>
                         <p style="color: brown;" class="py-6 text-center">
                             Read more about farm-produced Burger Cheddar, <br> Grill Cheeseburger & Farm Ice Cream.
                         </p>
                         <a href="the-farmer-products.html">
                             <abbr title="welcome to our farm">
-                                <button style="color: brown;" class="btn btn-outline btn-error text-xl font-semibold mt-12">OUR PRODUCTS</button>
+                                <button class="p-2 rounded-xl text-brawn border-2 border-gray-400 bg-stone-200 hover:border-2 hover:border-white hover:bg-[#973f24] hover:text-white text-xl font-semibold mt-12 mb-12 max-sm:">OUR PRODUCTS</button>
                             </abbr>
                         </a>
                     </div>
                 </div>
         <!-- card translate rotate divison -->
-                <div class="grid grid-cols-6 gap-6 p-10">
-                    <a href="the-farmer-products.html">
+                <div class="grid grid-cols-6 gap-16 p-10 max-sm:grid-cols-1 space-y-6">
+                    <div>
+                        <a class="max-sm:flex justify-center" href="the-farmer-products.html">
+                            <button style="color: brown;" class="transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:duration-300">
+                                <img class="max-sm:flex justify-center" src="./VADDO IMAGES/burgarcheddar_icon_red.png" alt="">CHEDDAR, GRILLED <br> CHEESE AND SAUCE
+                            </button>
+                        </a>
+                    </div>
+                    <a class="max-sm:flex justify-center" href="ice-cream-0.5L.html">
                         <button style="color: brown;" class="transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:duration-300">
-                            <img src="./VADDO IMAGES/burgarcheddar_icon_red.png" alt="">CHEDDAR, GRILLED CHEESE AND SAUCE
+                            <img class="max-sm:flex justify-center" src="./VADDO IMAGES/glassbytta_icon_red.png" alt="">ICE CREAM 0.5L         
                         </button>
                     </a>
-                    <a href="ice-cream-0.5L.html">
+                    <a class="max-sm:flex justify-center" href="farm-cheese.html">
                         <button style="color: brown;" class="transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:duration-300">
-                            <img src="./VADDO IMAGES/glassbytta_icon_red.png" alt="">ICE CREAM 0.5L         
+                            <img class="max-sm:flex justify-center" src="./VADDO IMAGES/ost_icon_red.png" alt="">FARM CHEESE
                         </button>
                     </a>
-                    <a href="farm-cheese.html">
+                    <a class="max-sm:flex justify-center" href="meat-box.html">
                         <button style="color: brown;" class="transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:duration-300">
-                            <img src="./VADDO IMAGES/ost_icon_red.png" alt="">FARM CHEESE
-                        </button>
-                    </a>
-                    <a href="meat-box.html">
-                        <button style="color: brown;" class="transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:duration-300">
-                            <img src="./VADDO IMAGES/kottlada_icon_red.png" alt="">MEAT BOX
+                            <img class="max-sm:flex justify-center" src="./VADDO IMAGES/kottlada_icon_red.png" alt="">MEAT BOX
                         </button>
                     </a>
                     
-                    <a href="ice-cream-resturants.html">
+                    <a class="max-sm:flex justify-center" href="ice-cream-resturants.html">
                         <button style="color: brown;" class="transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:duration-300">
-                            <img src="./VADDO IMAGES/glas_icon_red.png" alt="">ICE CREAM FOR RESTAURANTS
+                            <img class="max-sm:flex justify-center" src="./VADDO IMAGES/glas_icon_red.png" alt="">ICE CREAM FOR <br> RESTAURANTS
                         </button>
                     </a>
-                    <a href="meat-box.html">
+                    <a class="max-sm:flex justify-center" href="meat-box.html">
                         <button style="color: brown;" class="transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:duration-300">
-                            <img src="./VADDO IMAGES/kottlada_icon_red.png" alt="">MEAT BOX
+                            <img class="max-sm:flex justify-center" src="./VADDO IMAGES/kottlada_icon_red.png" alt="">MEAT BOX
                         </button>
                     </a>
                 </div>
             </div>        
         </section>
 <!-- opening hour 4th section -->
-        <section class="hero bg-gray-100 text-gray-600 min-h-screen p-6 mt-12 mb-6">
+        <section class="hero bg-gray-300 text-gray-600 min-h-screen p-6 mt-4 mb-4">
             <div>
                 <div class="hero-content flex-col gap-16 mt-32 mb-40 lg:flex-row-reverse">
-                  <img class="max-w-sm rounded-lg" src="./VADDO IMAGES/Vaddo-gardsmejeri-logo-vit-kopia.png" alt="">
+                  <img class="max-w-sm rounded-lg max-sm:w-72" src="./VADDO IMAGES/Vaddo-gardsmejeri-logo-vit-kopia.png" alt="">
                   <div class="space-y-6">
                     <h1 class="text-2xl font-semibold">Opening hours:</h1>
                     <p>Bonden and Burgaren <br>
@@ -246,11 +249,11 @@
                 </div>
             
 
-        <!-- opening hour all card container -->
+<!-- opening hour all card container -->
 
-    <div class="grid grid-cols-5 gap-6">
+<div class="md:grid md:grid-cols-5 md:gap-6">
 
-    <!-- opening hour 1st card container -->
+<!-- opening hour 1st card container -->
                 
 <!-- Open the modal using ID.showModal() method -->
 <button class="" onclick="my_modal_1.showModal()">
@@ -1058,9 +1061,9 @@
                 <div>
                     <h1 class="text-4xl font-bold mt-24 text-center">Visit us</h1>
                     <div class="flex justify-center space-x-3 mt-10 mb-24">
-                        <a href=""><img title="Facebook" class="w-8 h-8 rounded-3xl" src="./VADDO IMAGES/th.jpeg" alt=""></a>
-                        <a href=""><img title="Instagram" class="w-8 h-8 rounded-3xl" src="./VADDO IMAGES/th (1).jpeg" alt=""></a>
-                        <a href=""><img title="Tiktok" class="w-8 h-8 rounded-3xl" src="./VADDO IMAGES/th (2).jpeg" alt=""></a>
+                        <a href="https://www.facebook.com"><img title="Facebook" class="w-8 h-8 rounded-3xl" src="./VADDO IMAGES/th.jpeg" alt=""></a>
+                        <a href="https://www.instagram.com"><img title="Instagram" class="w-8 h-8 rounded-3xl" src="./VADDO IMAGES/th (1).jpeg" alt=""></a>
+                        <a href="https://www.tiktok.com"><img title="Tiktok" class="w-8 h-8 rounded-3xl" src="./VADDO IMAGES/th (2).jpeg" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -1095,23 +1098,23 @@
         <form>
             <h6 class="footer-title text-xl">Follow us</h6>
             <div class="flex space-x-3">
-              <a href="">
+              <a href="https://www.facebook.com">
                 <img title="Facebook" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/facebook (2).jpeg" alt="">
               </a>
-              <a href="">
+              <a href="https://www.twiter.com">
                 <img title="Twiter" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/twiter.jpeg" alt="">
               </a>
-              <a href="">
+              <a href="https://www.youtube.com">
                 <img title="Youtube" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/youtube.jpeg" alt="">
               </a>
-              <a href="">
+              <a href="https://www.instagram.com">
                 <img title="Instagram" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/instagram.jpeg" alt="">
               </a>
             </div>
           </form>
           <nav>
             <h6 class="footer-title text-xl">Download our apps</h6>
-            <a class="link link-hover" href="">
+            <a class="link link-hover" href="https://play.google.com/store/games?device=phone">
                 <img class="w-56 rounded-full" src="./VADDO IMAGES/th (10).jpeg" alt="">
             </a>
         </nav>
