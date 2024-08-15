@@ -11,6 +11,9 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- flow bite link-->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+
 <!-- font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,1068 +68,1086 @@
 
     <header class="poppins px-2">
 
-        <!-- font top nav bar -->
-        <nav class="p-4 max-sm:flex-col">
-            <ul class="flex justify-around font-semibold">
-                <li class="hover:text-orange-400"><a class="link hover:text-orange-500 no-underline" href="index.html">HOME</a></li>
-                <div class="dropdown dropdown-hover mr-6">
-                    <li class="">
-                        <a class="link hover:text-orange-500 no-underline">ABOUT US</a>
-                    </li>
-                        <ul  class="dropdown-content menu rounded-box z-[1] w-52 p-2 shadow">
-                            <li> <a href="about-the-farmhouse.html" class="link hover:text-orange-500 no-underline text-white">THE FARMHOUSE</a></li>
-                            <li> <a href="about-the-dairy.html" class="link hover:text-orange-500 no-underline text-white">THE DAIRY</a></li>
-                        </ul>
-                </div>
-                <li class=""><a class="link hover:text-orange-500 no-underline" href="contact-us.html">CONTACT US</a></li>
-                <li class=""><a class="link hover:text-orange-500 no-underline" href="ice-cream-resturants.html">MORE</a></li>
+  <!-- navbar section -->
+
+<nav class="bg-white border-gray-200 dark:bg-gray-900">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="./VADDO IMAGES/color_logo-wm-lm_dimensions (1).png" class="h-20 rounded-xl" alt=""/>
+      </div>
+      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="index.html" class="block py-2 px-3 text-white bg-orange-500 rounded md:bg-transparent md:text-orange-500 md:p-0 dark:text-white md:dark:text-orange-500" aria-current="page">HOME</a>
+          </li>
+          <li class="dropdown dropdown-hover">
+            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-orange-500 dark:hover:text-white md:dark:hover:bg-transparent">ABOUT US</a>
+
+            <ul class="dropdown-content menu rounded-box z-[1] w-52 p-2 shadow">
+                <li> <a href="about-the-farmhouse.html" class="link hover:text-orange-500 no-underline text-gray-900">THE FARMHOUSE</a></li>
+                <li> <a href="about-the-dairy.html" class="link hover:text-orange-500 no-underline text-gray-900">THE DAIRY</a></li>
             </ul>
-        </nav>
 
-        <!-- navbar & background image section -->
-    <nav style="background-image: url(./VADDO\ IMAGES/Hero-1024x768.jpg);" class="hero bg-no-repeat min-h-screen w-full p-6 text-gray-200">
-        <nav class="">
+          </li>
+          <li>
+            <a href="ice-cream-resturants.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-orange-500 dark:hover:text-white md:dark:hover:bg-transparent">FOOD MENU</a>
+          </li>
+          <!-- <li>
+            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-orange-500 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+          </li> -->
+          <li>
+            <a href="contact-us.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-orange-500 dark:hover:text-white md:dark:hover:bg-transparent">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+          
 
-            <!-- bg nav part -->
-            <div class="font-bold flex justify-around max-sm:flex-col space-y-6">
-                <div>
-                    <a href="the-farmer-products.html" class="link hover:text-orange-500 no-underline text-white max-sm:flex justify-center">THE FARM'S PRODUCTS</a>
-                </div>
-                <div class="max-sm:flex justify-center">
-                    <img class="w-96 max-sm:w-44" src="./VADDO IMAGES/Vaddo-gardsmejeri-logo-vit-kopia.png" alt="">
-                </div>
-                <div class="flex-none max-sm:flex justify-center">
-                    <div class="dropdown dropdown-hover">
-                        <div  class=""><a class="link hover:text-orange-500 no-underline text-white">EAT & EXPERIENCE</a></div>
-                        <ul class="dropdown-content menu rounded-box z-[1] w-52 p-2 shadow">
-                          <li><a href="eat-&-experience.html" class="link hover:text-orange-500 no-underline text-white">THE FARMER & THE BARGHER</a></li>
-                          <li> <a href="eat-&-experience2.html" class="link hover:text-orange-500 no-underline text-white">FARMER'S ICE-CREAM PARTY</a></li>
-                          <li> <a href="eat-&-experience3.html" class="link hover:text-orange-500 no-underline text-white">FARMER'S ICE-CREAM STALLS</a></li>
-                          <li> <a href="eat-&-experience4.html" class="link hover:text-orange-500 no-underline text-white">DAIRY CAFE & FARM SHOP</a></li>
-                          <li> <a href="" class="link hover:text-orange-500 no-underline text-white">EVENTS</a></li>
-                          <li> <a href="" class="link hover:text-orange-500 no-underline text-white">CAMP WITH US</a></li>
-                          <li> <a href="" class="link hover:text-orange-500 no-underline text-white">GROUPS</a></li>
-                          <li> <a href="" class="link hover:text-orange-500 no-underline text-white">VISITOR MAPS</a></li>
-                        </ul>
+        <!-- banner section & background image section -->
+        <div style="background-image: url(./VADDO\ IMAGES/Hero-1024x768.jpg);" class="hero bg-no-repeat min-h-screen w-full p-6 text-gray-200">
+            <div class="">
+    
+                <div class="font-bold flex justify-between max-sm:flex-col space-y-6">
+                    <div>
+                        <a href="the-farmer-products.html" class="link hover:text-orange-500 no-underline text-white max-sm:flex justify-center">THE FARM'S PRODUCTS</a>
                     </div>
+                     
+                    <div class="flex-none max-sm:flex justify-center">
+                        <div class="dropdown dropdown-hover">
+                            <div  class=""><a class="link hover:text-orange-500 no-underline text-white">EAT & EXPERIENCE</a></div>
+                            <ul class="dropdown-content menu rounded-box z-[1] w-52 p-2 shadow">
+                              <li><a href="eat-&-experience.html" class="link hover:text-orange-500 no-underline text-white">THE FARMER & THE BARGHER</a></li>
+                              <li> <a href="eat-&-experience2.html" class="link hover:text-orange-500 no-underline text-white">FARMER'S ICE-CREAM PARTY</a></li>
+                              <li> <a href="eat-&-experience3.html" class="link hover:text-orange-500 no-underline text-white">FARMER'S ICE-CREAM STALLS</a></li>
+                              <li> <a href="eat-&-experience4.html" class="link hover:text-orange-500 no-underline text-white">DAIRY CAFE & FARM SHOP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                  <hr class="mt-16">
+    
+                  <div class="hero mt-32">
+                    <div class="hero-content flex-col lg:flex-row">
+                      <div>
+                        <p class="py-24 font-bold text-xl text-center">WELCOME FARM TO FEST</p>
+                        <h1 class="md:text-6xl font-bold text-center">REAL FOOD FROM THE EDLUND FAMILY'S FARM IN ROSLAGEN<h1>  
+                      </div>
+                    </div>
+                  </div>
                 </div>
             </div>
-
-              <hr class="mt-16">
-
-              <div class="hero mt-32">
-                <div class="hero-content flex-col lg:flex-row">
-                  <div>
-                    <p class="py-24 font-bold text-xl text-center">WELCOME TO VÄDDÖ GÅRDSMEJERI</p>
-                    <h1 class="md:text-6xl font-bold text-center">REAL FOOD FROM THE EDLUND FAMILY'S FARM IN ROSLAGEN<h1>  
-                  </div>
-                </div>
-              </div>
-        </nav>
-    </nav>
-
-
-<!-- welcome to a real farm section 2nd section -->
-
-        <section style="color: brown;" class="bg-gray-300 hero min-h-screen p-20 mt-4 mb-4">
-                <div class="md:hero-content md:grid md:grid-cols-2 gap-32 lg:flex-row-reverse">
-                  <div class="space-y-10 text-center">
-                    <p class="font-semibold">STOP BY AND SAY HELLO TO US AND THE ANIMALS</p>
-                    <h1 class="md:text-5xl font-bold">WELCOME <br> TO A REAL FARM</h1>
-                    <p class="font-normal">The farm has been run by the Edlund family since 1912. Here we work KRAV-ecologically and sustainably with the entire chain from pasture to stomach. <br>
-                        From the work in the field, to the farm's own milk production, further into the dairy to be processed into our farm products. The whole farm has a circular approach and today there are around 60 happy cows on the farm.</p>
-
-                    <p>On the farm, you can visit our animals in Lilla Bondgården, shop in the farm shop, have a coffee in our Dairy Café, eat at Bonden & Burgaren or enjoy the farm's ice cream at Bondens Glasskalas, beautifully located by Väddö Kanal.</p>
-
-                    <a href="contact-us.html">
-                        <abbr title="welcome to our farm">
-                            <button class="p-2 rounded-xl text-brawn border-2 border-gray-400 bg-stone-200 hover:border-2 hover:border-white hover:bg-[#973f24] hover:text-white text-xl font-semibold mt-12 mb-12 max-sm:h-20">WELCOME TO OUR FARM</button>
-                        </abbr>
-
-                    </a>
-                  </div>
-        <!-- welcome dairy image container -->          
-                  <div class="space-y-28 max-sm:mt-16">
-                    <div class="text-2xl font-medium flex gap-6">
-                        <img src="./VADDO IMAGES/traktor.png" alt="">
-                        <h2>Organic farming</h2>
-                    </div>
-                    <div class="text-2xl font-medium flex gap-6">
-                        <img class="w-14 h-10" src="./VADDO IMAGES/ko.png" alt="">
-                        <h2>Take care of our animals</h2>
-                    </div>
-                    <div class="text-2xl font-medium flex gap-6">
-                        <img src="./VADDO IMAGES/mjolk.png" alt="">
-                        <h2>Dairy Café & Farm Shop</h2>
-                    </div>
-                    <div class="text-2xl font-medium flex gap-6">
-                        <img src="./VADDO IMAGES/kott.png" alt="">
-                        <h2>OEat with us!</h2>
-                    </div>
-                    <div class="text-2xl font-medium flex gap-6">
-                        <img src="./VADDO IMAGES/mjolk.png" alt="">
-                        <h2>The dairy</h2>
-                    </div>
-                </div>
-                </div>
-        </section>
-
-
-<!-- farm's product 3rd section -->
-
-        <section class="hero min-h-screen bg-gray-300">
-            <div>
-                <div class="hero-content flex justify-evenly gap-24 p-16 lg:flex-row-reverse max-sm:flex-col-reverse">
-                    <div>
-                        <img src="./VADDO IMAGES/Bild3.png" alt="">
-                    </div>
-                    <div class="text-center space-y-6">
-                        <h1 style="color: brown;" class="md:text-5xl font-bold">THE FARM'S PRODUCTS</h1>
-                        <p style="color: brown;" class="py-6 text-center">
-                            Read more about farm-produced Burger Cheddar, <br> Grill Cheeseburger & Farm Ice Cream.
-                        </p>
-                        <a href="the-farmer-products.html">
+    
+    
+    <!-- welcome to a real farm section 2nd section -->
+    
+            <section style="color: brown;" class="bg-gray-300 hero min-h-screen p-20 mt-4 mb-4">
+                    <div class="md:hero-content md:grid md:grid-cols-2 gap-32 lg:flex-row-reverse">
+                      <div class="space-y-10 text-center">
+                        <p class="font-semibold">STOP BY AND SAY HELLO TO US AND THE ANIMALS</p>
+                        <h1 class="md:text-5xl font-bold">WELCOME <br> TO A REAL FARM</h1>
+                        <p class="font-normal">The farm has been run by the Edlund family since 1912. Here we work KRAV-ecologically and sustainably with the entire chain from pasture to stomach. <br>
+                            From the work in the field, to the farm's own milk production, further into the dairy to be processed into our farm products. The whole farm has a circular approach and today there are around 60 happy cows on the farm.</p>
+    
+                        <p>On the farm, you can visit our animals in Lilla Bondgården, shop in the farm shop, have a coffee in our Dairy Café, eat at Bonden & Burgaren or enjoy the farm's ice cream at Bondens Glasskalas, beautifully located by Väddö Kanal.</p>
+    
+                        <a href="contact-us.html">
                             <abbr title="welcome to our farm">
-                                <button class="p-2 rounded-xl text-brawn border-2 border-gray-400 bg-stone-200 hover:border-2 hover:border-white hover:bg-[#973f24] hover:text-white text-xl font-semibold mt-12 mb-12 max-sm:">OUR PRODUCTS</button>
+                                <button class="p-2 rounded-xl text-brawn border-2 border-gray-400 bg-stone-200 hover:border-2 hover:border-white hover:bg-[#973f24] hover:text-white text-xl font-semibold mt-12 mb-12 max-sm:h-20">WELCOME TO OUR FARM</button>
                             </abbr>
+    
                         </a>
+                      </div>
+            <!-- welcome dairy image container -->          
+                      <div class="space-y-28 max-sm:mt-16">
+                        <div class="text-2xl font-medium flex gap-6">
+                            <img src="./VADDO IMAGES/traktor.png" alt="">
+                            <h2>Organic farming</h2>
+                        </div>
+                        <div class="text-2xl font-medium flex gap-6">
+                            <img class="w-14 h-10" src="./VADDO IMAGES/ko.png" alt="">
+                            <h2>Take care of our animals</h2>
+                        </div>
+                        <div class="text-2xl font-medium flex gap-6">
+                            <img src="./VADDO IMAGES/mjolk.png" alt="">
+                            <h2>Dairy Café & Farm Shop</h2>
+                        </div>
+                        <div class="text-2xl font-medium flex gap-6">
+                            <img src="./VADDO IMAGES/kott.png" alt="">
+                            <h2>OEat with us!</h2>
+                        </div>
+                        <div class="text-2xl font-medium flex gap-6">
+                            <img src="./VADDO IMAGES/mjolk.png" alt="">
+                            <h2>The dairy</h2>
+                        </div>
                     </div>
-                </div>
-        <!-- card translate rotate divison -->
-                <div class="grid grid-cols-6 gap-16 p-10 max-sm:grid-cols-1 space-y-6">
-                    <div>
-                        <a class="max-sm:flex justify-center" href="the-farmer-products.html">
+                    </div>
+            </section>
+    
+    
+    <!-- farm's product 3rd section -->
+    
+            <section class="hero min-h-screen bg-gray-300">
+                <div>
+                    <div class="hero-content flex justify-evenly gap-24 p-16 lg:flex-row-reverse max-sm:flex-col-reverse">
+                        <div>
+                            <img src="./VADDO IMAGES/Bild3.png" alt="">
+                        </div>
+                        <div class="text-center space-y-6">
+                            <h1 style="color: brown;" class="md:text-5xl font-bold">THE FARM'S PRODUCTS</h1>
+                            <p style="color: brown;" class="py-6 text-center">
+                                Read more about farm-produced Burger Cheddar, <br> Grill Cheeseburger & Farm Ice Cream.
+                            </p>
+                            <a href="the-farmer-products.html">
+                                <abbr title="welcome to our farm">
+                                    <button class="p-2 rounded-xl text-brawn border-2 border-gray-400 bg-stone-200 hover:border-2 hover:border-white hover:bg-[#973f24] hover:text-white text-xl font-semibold mt-12 mb-12 max-sm:">OUR PRODUCTS</button>
+                                </abbr>
+                            </a>
+                        </div>
+                    </div>
+            <!-- card translate rotate divison -->
+                    <div class="grid grid-cols-6 gap-16 p-10 max-sm:grid-cols-1 space-y-6">
+                        <div>
+                            <a class="max-sm:flex justify-center" href="the-farmer-products.html">
+                                <button style="color: brown;" class="transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:duration-300">
+                                    <img class="max-sm:flex justify-center" src="./VADDO IMAGES/burgarcheddar_icon_red.png" alt="">CHEDDAR, GRILLED <br> CHEESE AND SAUCE
+                                </button>
+                            </a>
+                        </div>
+                        <a class="max-sm:flex justify-center" href="ice-cream-0.5L.html">
                             <button style="color: brown;" class="transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:duration-300">
-                                <img class="max-sm:flex justify-center" src="./VADDO IMAGES/burgarcheddar_icon_red.png" alt="">CHEDDAR, GRILLED <br> CHEESE AND SAUCE
+                                <img class="max-sm:flex justify-center" src="./VADDO IMAGES/glassbytta_icon_red.png" alt="">ICE CREAM 0.5L         
+                            </button>
+                        </a>
+                        <a class="max-sm:flex justify-center" href="farm-cheese.html">
+                            <button style="color: brown;" class="transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:duration-300">
+                                <img class="max-sm:flex justify-center" src="./VADDO IMAGES/ost_icon_red.png" alt="">FARM CHEESE
+                            </button>
+                        </a>
+                        <a class="max-sm:flex justify-center" href="meat-box.html">
+                            <button style="color: brown;" class="transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:duration-300">
+                                <img class="max-sm:flex justify-center" src="./VADDO IMAGES/kottlada_icon_red.png" alt="">MEAT BOX
+                            </button>
+                        </a>
+                        
+                        <a class="max-sm:flex justify-center" href="ice-cream-resturants.html">
+                            <button style="color: brown;" class="transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:duration-300">
+                                <img class="max-sm:flex justify-center" src="./VADDO IMAGES/glas_icon_red.png" alt="">ICE CREAM FOR <br> RESTAURANTS
+                            </button>
+                        </a>
+                        <a class="max-sm:flex justify-center" href="meat-box.html">
+                            <button style="color: brown;" class="transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:duration-300">
+                                <img class="max-sm:flex justify-center" src="./VADDO IMAGES/kottlada_icon_red.png" alt="">MEAT BOX
                             </button>
                         </a>
                     </div>
-                    <a class="max-sm:flex justify-center" href="ice-cream-0.5L.html">
-                        <button style="color: brown;" class="transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:duration-300">
-                            <img class="max-sm:flex justify-center" src="./VADDO IMAGES/glassbytta_icon_red.png" alt="">ICE CREAM 0.5L         
-                        </button>
-                    </a>
-                    <a class="max-sm:flex justify-center" href="farm-cheese.html">
-                        <button style="color: brown;" class="transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:duration-300">
-                            <img class="max-sm:flex justify-center" src="./VADDO IMAGES/ost_icon_red.png" alt="">FARM CHEESE
-                        </button>
-                    </a>
-                    <a class="max-sm:flex justify-center" href="meat-box.html">
-                        <button style="color: brown;" class="transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:duration-300">
-                            <img class="max-sm:flex justify-center" src="./VADDO IMAGES/kottlada_icon_red.png" alt="">MEAT BOX
-                        </button>
-                    </a>
-                    
-                    <a class="max-sm:flex justify-center" href="ice-cream-resturants.html">
-                        <button style="color: brown;" class="transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:duration-300">
-                            <img class="max-sm:flex justify-center" src="./VADDO IMAGES/glas_icon_red.png" alt="">ICE CREAM FOR <br> RESTAURANTS
-                        </button>
-                    </a>
-                    <a class="max-sm:flex justify-center" href="meat-box.html">
-                        <button style="color: brown;" class="transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:duration-300">
-                            <img class="max-sm:flex justify-center" src="./VADDO IMAGES/kottlada_icon_red.png" alt="">MEAT BOX
-                        </button>
-                    </a>
-                </div>
-            </div>        
-        </section>
-<!-- opening hour 4th section -->
-        <section class="hero bg-gray-300 text-gray-600 min-h-screen p-6 mt-4 mb-4">
-            <div>
-                <div class="hero-content flex-col gap-16 mt-32 mb-40 lg:flex-row-reverse">
-                  <img class="max-w-sm rounded-lg max-sm:w-72" src="./VADDO IMAGES/Vaddo-gardsmejeri-logo-vit-kopia.png" alt="">
-                  <div class="space-y-6">
-                    <h1 class="text-2xl font-semibold">Opening hours:</h1>
-                    <p>Bonden and Burgaren <br>
-                        Open every day at 11-20</p>
-                    <p>Farmer's Ice Cream Festival <br>
-                        Open every day at 11-20</p>
-                    <p>Dairy Café, Farm Shop and Lilla Bondgården <br>
-                        Open every day at 10-17</p>
-                    <p>Farmer's ice cream stalls (Flygfyren, Stora COOP and Väddö) <br>
-                        Open every day at 11-17</p>
-                  </div>
-                </div>
-            
-
-<!-- opening hour all card container -->
-
-<div class="md:grid md:grid-cols-5 md:gap-6">
-
-<!-- opening hour 1st card container -->
-                
-<!-- Open the modal using ID.showModal() method -->
-<button class="" onclick="my_modal_1.showModal()">
-    <div class="container cursor-pointer bg-slate-100">
-        <img class="w-80 h-60" src="./VADDO IMAGES/452513308_869270611894650_6649830248539736385_nfull.jpg" alt="" class="image">
-        <div class="middle">
-          <strong><a class="link link-secondary no-underline" href="">VaddoGardsmejeri</a></strong>
-        </div>
-    </div>
-</button>
-<dialog id="my_modal_1" class="modal">
-    <div class="modal-box">
-        <div class="drawer drawer-end">
-            <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
-            <div class="drawer-content">
-                <!-- Page content here -->
-                <!-- <label for="my-drawer-4" class="drawer-button btn btn-primary"></label> -->
-                <img src="./VADDO IMAGES/452513308_869270611894650_6649830248539736385_nfull.jpg" alt="">
-            </div>
-              <div class="">  <!-- class:drawer-side -->
-                <label for="my-drawer-4" aria-label="close sideba" class="drawer-overlay"></label>
-                <ul class="menu text-base-content min-h-full p-4 bg-slate-600 text-white">
-            <!-- Sidebar content here -->
-                    <div>
-                        <a  class="flex space-x-3" href="">
-                            <img class="w-8 h-8 rounded-full" src="./VADDO IMAGES/vaddogardsmejeri.jpg" alt="">
-                            <h2 class="font-bold">VaddoGardsmejeri</h2>
-                        </a>
-                    </div>
-                    <p class="mt-5">
-                        Mormors Mums, en glassig favorit på Bondens Glasskalas 🍨 <br>
-                        Rostad mandel med kolasnurr och vaniljglass från gårdens mejeri, toppad med fudgesås, grädde, salta kolapärlor, fudge & kex 😋🤎 <br>
-                    </p>
-                    <p class="text-orange-400">
-                        <a class="link link-hover">#väddögårdsmejeri</a>
-                        <a class="link link-hover">#bondensglasskalas</a>
-                        <a class="link link-hover">#icecream</a>
-                        <a class="link link-hover">#glass</a>
-                        <a class="link link-hover">#middag</a>
-                        <a class="link link-hover">#glassigt</a>
-                        <a class="link link-hover">##freakshake</a>
-                        <a class="link link-hover">#dessert</a>
-                        <a class="link link-hover">#efterrätt</a>
-                        <a class="link link-hover">#väddöcheddarsås</a>
-                        <a class="link link-hover">#cheddarsås</a>
-                        <a class="link link-hover">#gårdsproducerat</a>
-                        <a class="link link-hover">#glassbonden</a>
-                        <a class="link link-hover">#gårdsglass</a>
-                        <a class="link link-hover">#glasslunch</a>
-                        <a class="link link-hover">#upplevelse</a>
-                        <a class="link link-hover">#väddökanal</a>
-                        <a class="link link-hover">#grisslehamn</a>
-                        <a class="link link-hover">#norrtälje</a>
-                        <a class="link link-hover">#stockholm</a>
-                        <a class="link link-hover">#gårdsmejeri</a>
-                        <a class="link link-hover">#roslagen</a>
-                        <a class="link link-hover">#bondgård</a>
-                        <a class="link link-hover">#augusti</a>
-                        <a class="link link-hover">#landet</a>
-                        <a class="link link-hover">#bonde</a>
-                        <a class="link link-hover">#mejeri</a>
-                        <a class="link link-hover">#väddö</a>
-                        <a class="link link-hover">#🍦</a>
-                        <a class="link link-hover">##🇸🇪</a>
-                        <a class="link link-hover">#visitroslagen</a>
-                    </p>
-                    <div class="flex justify-evenly mt-8">
-                        <div class="flex justify-center">
-                            <a class="flex space-x-3" href="">
-                                <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (8).jpeg" alt="">
-                                 <h2 class="font-bold">Reply</h2>
-                            </a>
-                        </div>
-                        <div class="flex justify-end">
-                            <a class="flex space-x-3" href="">
-                                <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (1).jpeg" alt="">
-                                <h2 class="font-bold">Instagram</h2>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="mt-6 mb-6">
-                        decemberjulMums😍😋😋glass_testingDEN HÄR ÄR NÅGOR FÖR MIG!! 🔥😱😩 nu snackar vi grejer
-                    </p>
-                </ul>
-            </div>
-        </div>
-    </div>
-  <form method="dialog" class="modal-backdrop">
-    <button>close</button>
-  </form>
-</dialog>
-
-
-<!-- opening hour 2nd card container -->
-
-<!-- Open the modal using ID.showModal() method -->
-<button class="" onclick="my_modal_3.showModal()">
-    <div class="container cursor-pointer bg-slate-100">
-        <img class="w-80 h-60 " src="./VADDO IMAGES/452450225_869261481895563_6232327928519031407_nfull.jpg" alt="" class="image">
-        <div class="middle">
-          <strong><a class="link link-secondary no-underline" href="">VaddoGardsmejeri</a></strong>
-        </div>
-    </div>
-</button>
-<dialog id="my_modal_3" class="modal">
-    <div class="modal-box">
-        <div class="drawer drawer-end">
-            <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
-            <div class="drawer-content">
-                <!-- Page content here -->
-                <!-- <label for="my-drawer-4" class="drawer-button btn btn-primary"></label> -->
-                <img src="./VADDO IMAGES/452450225_869261481895563_6232327928519031407_nfull.jpg" alt="">
-            </div>
-              <div class="">  <!-- class:drawer-side -->
-                <label for="my-drawer-4" aria-label="close sideba" class="drawer-overlay"></label>
-                <ul class="menu text-base-content min-h-full p-4 bg-slate-600 text-white">
-            <!-- Sidebar content here -->
-                    <div>
-                        <a  class="flex space-x-3" href="">
-                            <img class="w-8 h-8 rounded-full" src="./VADDO IMAGES/vaddogardsmejeri.jpg" alt="">
-                            <h2 class="font-bold">VaddoGardsmejeri</h2>
-                        </a>
-                    </div>
-                    <p class="mt-5">Väddö Cheddar sauce ❤️Sausage <br>
-                        A good grilled sausage in fresh bread with a delicious creamy Väddö Cheddar sauce topping is superbly tasty and simple 😋🌭🧀 <br>
-                        We use @anderssontillman Chili Cheddar grill, the cheese sausage with Väddö cheddar in and then topped with Väddö Cheddar sauce Chili Jalapeno 👌
-                    </p>
-                    <p class="text-orange-400">
-                        <a class="link link-hover">#väddögårdsmejeri</a>
-                        <a class="link link-hover">#grilladkorv</a>
-                        <a class="link link-hover">#anderssontillman</a>
-                        <a class="link link-hover">#lunch</a>
-                        <a class="link link-hover">#middag</a>
-                        <a class="link link-hover">#grill</a>
-                        <a class="link link-hover">#grillat</a>
-                        <a class="link link-hover">#grilla</a>
-                        <a class="link link-hover">#ostsås</a>
-                        <a class="link link-hover">#väddöcheddarsås</a>
-                        <a class="link link-hover">#cheddarsås</a>
-                        <a class="link link-hover">#korv</a>
-                        <a class="link link-hover">#sommarmat</a>
-                        <a class="link link-hover">#chili</a>
-                        <a class="link link-hover">#jalapeno</a>
-                        <a class="link link-hover">#topping</a>
-                        <a class="link link-hover">#dip</a>           
-                    </p>
-                    <div class="flex justify-evenly mt-8">
-                        <div class="flex justify-center">
-                            <a class="flex space-x-3" href="">
-                                <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (8).jpeg" alt="">
-                                 <h2 class="font-bold">Reply</h2>
-                            </a>
-                        </div>
-                        <div class="flex justify-end">
-                            <a class="flex space-x-3" href="">
-                                <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (1).jpeg" alt="">
-                                <h2 class="font-bold">Instagram</h2>
-                            </a>
-                        </div>
-                    </div>
-                </ul>
-            </div>
-        </div>
-    </div>
-  <form method="dialog" class="modal-backdrop">
-    <button>close</button>
-  </form>
-</dialog>
-
-
-<!-- opening hour 3rd card container -->
-
-<button class="" onclick="my_modal_4.showModal()">
-    <div class="container cursor-pointer bg-slate-100">
-        <img class="w-80 h-60" src="./VADDO IMAGES/452692134_869252918563086_3797919331696984713_nfull.jpg" alt="" class="image">
-        <div class="middle">
-          <strong><a class="link link-secondary no-underline" href="">VaddoGardsmejeri</a></strong>
-        </div>
-    </div>
-</button>
-<dialog id="my_modal_4" class="modal">
-    <div class="modal-box">
-        <div class="drawer drawer-end">
-            <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
-            <div class="drawer-content">
-                <!-- Page content here -->
-                <!-- <label for="my-drawer-4" class="drawer-button btn btn-primary"></label> -->
-                <img src="./VADDO IMAGES/452692134_869252918563086_3797919331696984713_nfull.jpg" alt="">
-            </div>
-              <div class="">  <!-- class:drawer-side -->
-                <label for="my-drawer-4" aria-label="close sideba" class="drawer-overlay"></label>
-                <ul class="menu text-base-content min-h-full p-4 bg-slate-600 text-white">
-            <!-- Sidebar content here -->
-                    <div>
-                        <a  class="flex space-x-3" href="">
-                            <img class="w-8 h-8 rounded-full" src="./VADDO IMAGES/vaddogardsmejeri.jpg" alt="">
-                            <h2 class="font-bold">VaddoGardsmejeri</h2>
-                        </a>
-                    </div>
-                    <p class="mt-5">Oavsett väder, så förgyller en glasspaus dagen 😀☕🍦
-                        Dela skratt och skapa härliga sommarminnen, vi ses på bondgården 👋 <br>                
-                    </p>
-                    <p class="text-orange-400">
-                        <a class="link link-hover">#väddögårdsmejeri</a>
-                        <a class="link link-hover">#gårdsglass</a>
-                        <a class="link link-hover">#bondgård</a>
-                        <a class="link link-hover">#glass</a>
-                        <a class="link link-hover">#sommar</a>
-                        <a class="link link-hover">#sommarlov</a>
-                        <a class="link link-hover">#väddö</a>
-                        <a class="link link-hover">#roslagen</a>
-                        <a class="link link-hover">#grisslehamn</a>
-                        <a class="link link-hover">#gårdsbutik</a>
-                        <a class="link link-hover">#mejericafé</a>
-                        <a class="link link-hover">#norrtälje</a>
-                        <a class="link link-hover">#stockholm</a>
-                        <a class="link link-hover">#upplevelse</a>
-                        <a class="link link-hover">#hagetillmage</a>
-                        <a class="link link-hover">#sommarisverige</a>
-                        <a class="link link-hover">#fika</a>           
-                        <a class="link link-hover">#kaffe</a>           
-                        <a class="link link-hover">#lantliv</a>           
-                        <a class="link link-hover">#livetpålandet</a>           
-                    </p>
-                    <div class="flex justify-evenly mt-8">
-                        <div class="flex justify-center">
-                            <a class="flex space-x-3" href="">
-                                <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (8).jpeg" alt="">
-                                 <h2 class="font-bold">Reply</h2>
-                            </a>
-                        </div>
-                        <div class="flex justify-end">
-                            <a class="flex space-x-3" href="">
-                                <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (1).jpeg" alt="">
-                                <h2 class="font-bold">Instagram</h2>
-                            </a>
-                        </div>
-                    </div>
-                </ul>
-            </div>
-        </div>
-    </div>
-  <form method="dialog" class="modal-backdrop">
-    <button>close</button>
-  </form>
-</dialog>
-
-
-<!-- opening hour 4th card container -->
-
-<button class="" onclick="my_modal_5.showModal()">
-    <div class="container cursor-pointer bg-slate-100">
-        <img class="w-80 h-60" src="./VADDO IMAGES/452022639_866216775533367_4267635767238575209_nfull.jpg" alt="" class="image">
-        <div class="middle">
-          <strong><a class="link link-secondary no-underline" href="">VaddoGardsmejeri</a></strong>
-        </div>
-    </div>
-</button>
-<dialog id="my_modal_5" class="modal">
-    <div class="modal-box">
-        <div class="drawer drawer-end">
-            <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
-            <div class="drawer-content">
-                <!-- Page content here -->
-                <!-- <label for="my-drawer-4" class="drawer-button btn btn-primary"></label> -->
-                <img src="./VADDO IMAGES/452022639_866216775533367_4267635767238575209_nfull.jpg" alt="">
-            </div>
-              <div class="">  <!-- class:drawer-side -->
-                <label for="my-drawer-4" aria-label="close sideba" class="drawer-overlay"></label>
-                <ul class="menu text-base-content min-h-full p-4 bg-slate-600 text-white">
-            <!-- Sidebar content here -->
-                    <div>
-                        <a  class="flex space-x-3" href="">
-                            <img class="w-8 h-8 rounded-full" src="./VADDO IMAGES/vaddogardsmejeri.jpg" alt="">
-                            <h2 class="font-bold">VaddoGardsmejeri</h2>
-                        </a>
-                    </div>
-                    <p class="mt-5">Önskar dig en riktigt glassig söndag 😎🍦☀️</p>
-                    <p class="text-orange-400 mt-6">
-                        <a class="link link-hover">#väddögårdsmejeri</a>
-                        <a class="link link-hover">#bondensglasskalas</a>
-                        <a class="link link-hover">#väddöglass</a>
-                        <a class="link link-hover">#glassigt</a>
-                        <a class="link link-hover">#icecream</a>
-                        <a class="link link-hover">#upplevelse</a>
-                        <a class="link link-hover">#grisslehamn</a>
-                        <a class="link link-hover">#hagetillmage</a>
-                        <a class="link link-hover">#utflykt</a>
-                        <a class="link link-hover">#roslagen</a>
-                        <a class="link link-hover">#norrtälje</a>
-                        <a class="link link-hover">#stockholm</a>
-                        <a class="link link-hover">#dessert</a>
-                        <a class="link link-hover">#farmtotable</a>
-                        <a class="link link-hover">#uppsala</a>
-                        <a class="link link-hover">#gårdsglass</a>
-                        <a class="link link-hover">#väddö</a>           
-                        <a class="link link-hover">#väddögårdsmejeri</a>
-                        <a class="link link-hover">#gårdsmejeri4 / 10ShareInstagram</a>           
-                    </p>
-                    <p class="mt-6">
-                        stellas_kitchen_swedenÅh vad gott 🤤😍ann.cathrine.dunderboKlart raffinerade finemang avancerat vackra glassar.
-                    </p>
-                    <div class="flex justify-evenly mt-8">
-                        <div class="flex justify-center">
-                            <a class="flex space-x-3" href="">
-                                <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (8).jpeg" alt="">
-                                 <h2 class="font-bold">Reply</h2>
-                            </a>
-                        </div>
-                        <div class="flex justify-end">
-                            <a class="flex space-x-3" href="">
-                                <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (1).jpeg" alt="">
-                                <h2 class="font-bold">Instagram</h2>
-                            </a>
-                        </div>
-                    </div>
-                </ul>
-            </div>
-        </div>
-    </div>
-  <form method="dialog" class="modal-backdrop">
-    <button>close</button>
-  </form>
-</dialog>
-
-
-<!-- opening hour 5th card container -->
-
-<button class="" onclick="my_modal_6.showModal()">
-    <div class="container cursor-pointer bg-slate-100">
-        <img class="w-80 h-60" src="./VADDO IMAGES/450012433_859340199554358_3221304865705498054_n.jpg" alt="" class="image">
-        <div class="middle">
-          <strong><a class="link link-secondary no-underline" href="">VaddoGardsmejeri</a></strong>
-        </div>
-    </div>
-</button>
-<dialog id="my_modal_6" class="modal">
-    <div class="modal-box">
-        <div class="drawer drawer-end">
-            <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
-            <div class="drawer-content">
-                <!-- Page content here -->
-                <!-- <label for="my-drawer-4" class="drawer-button btn btn-primary"></label> -->
-                <img src="./VADDO IMAGES/450012433_859340199554358_3221304865705498054_n.jpg" alt="">
-            </div>
-              <div class="">  <!-- class:drawer-side -->
-                <label for="my-drawer-4" aria-label="close sideba" class="drawer-overlay"></label>
-                <ul class="menu text-base-content min-h-full p-4 bg-slate-600 text-white">
-            <!-- Sidebar content here -->
-                    <div>
-                        <a  class="flex space-x-3" href="">
-                            <img class="w-8 h-8 rounded-full" src="./VADDO IMAGES/vaddogardsmejeri.jpg" alt="">
-                            <h2 class="font-bold">VaddoGardsmejeri</h2>
-                        </a>
-                    </div>
-                    <p class="mt-5">Väddö Cheddar sauce ❤️Sausage <br>
-                        A good grilled sausage in fresh bread with a delicious creamy Väddö Cheddar sauce topping is superbly tasty and simple 😋🌭🧀 <br>
-                        We use @anderssontillman Chili Cheddar grill, the cheese sausage with Väddö cheddar in and then topped with Väddö Cheddar sauce Chili Jalapeno 👌
-                    </p>
-                    <p class="text-orange-400">
-                        <a class="link link-hover">#väddögårdsmejeri</a>
-                        <a class="link link-hover">#grilladkorv</a>
-                        <a class="link link-hover">#anderssontillman</a>
-                        <a class="link link-hover">#lunch</a>
-                        <a class="link link-hover">#middag</a>
-                        <a class="link link-hover">#grill</a>
-                        <a class="link link-hover">#grillat</a>
-                        <a class="link link-hover">#grilla</a>
-                        <a class="link link-hover">#ostsås</a>
-                        <a class="link link-hover">#väddöcheddarsås</a>
-                        <a class="link link-hover">#cheddarsås</a>
-                        <a class="link link-hover">#korv</a>
-                        <a class="link link-hover">#sommarmat</a>
-                        <a class="link link-hover">#chili</a>
-                        <a class="link link-hover">#jalapeno</a>
-                        <a class="link link-hover">#topping</a>
-                        <a class="link link-hover">#dip</a>           
-                    </p>
-                    <div class="flex justify-evenly mt-8">
-                        <div class="flex justify-center">
-                            <a class="flex space-x-3" href="">
-                                <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (8).jpeg" alt="">
-                                 <h2 class="font-bold">Reply</h2>
-                            </a>
-                        </div>
-                        <div class="flex justify-end">
-                            <a class="flex space-x-3" href="">
-                                <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (1).jpeg" alt="">
-                                <h2 class="font-bold">Instagram</h2>
-                            </a>
-                        </div>
-                    </div>
-                </ul>
-            </div>
-        </div>
-    </div>
-  <form method="dialog" class="modal-backdrop">
-    <button>close</button>
-  </form>
-</dialog>
- 
-
-<!-- opening hour 6th card container -->
-
-
-<button class="" onclick="my_modal_7.showModal()">
-    <div class="container cursor-pointer bg-slate-100">
-        <img class="w-80 h-60" src="./VADDO IMAGES/452096045_866204268867951_5866425892348069282_nfull.jpg" alt="" class="image">
-        <div class="middle">
-          <strong><a class="link link-secondary no-underline" href="">VaddoGardsmejeri</a></strong>
-        </div>
-    </div>
-</button>
-<dialog id="my_modal_7" class="modal">
-    <div class="modal-box">
-        <div class="drawer drawer-end">
-            <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
-            <div class="drawer-content">
-                <!-- Page content here -->
-                <!-- <label for="my-drawer-4" class="drawer-button btn btn-primary"></label> -->
-                <img src="./VADDO IMAGES/452096045_866204268867951_5866425892348069282_nfull.jpg" alt="">
-            </div>
-              <div class="">  <!-- class:drawer-side -->
-                <label for="my-drawer-4" aria-label="close sideba" class="drawer-overlay"></label>
-                <ul class="menu text-base-content min-h-full p-4 bg-slate-600 text-white">
-            <!-- Sidebar content here -->
-                    <div>
-                        <a  class="flex space-x-3" href="">
-                            <img class="w-8 h-8 rounded-full" src="./VADDO IMAGES/vaddogardsmejeri.jpg" alt="">
-                            <h2 class="font-bold">VaddoGardsmejeri</h2>
-                        </a>
-                    </div>
-                    <p class="mt-5">Önskar dig en riktigt glassig söndag 😎🍦☀️</p>
-                    <p class="text-orange-400 mt-6">
-                        <a class="link link-hover">#väddögårdsmejeri</a>
-                        <a class="link link-hover">#bondensglasskalas</a>
-                        <a class="link link-hover">#väddöglass</a>
-                        <a class="link link-hover">#glassigt</a>
-                        <a class="link link-hover">#icecream</a>
-                        <a class="link link-hover">#upplevelse</a>
-                        <a class="link link-hover">#grisslehamn</a>
-                        <a class="link link-hover">#hagetillmage</a>
-                        <a class="link link-hover">#utflykt</a>
-                        <a class="link link-hover">#roslagen</a>
-                        <a class="link link-hover">#norrtälje</a>
-                        <a class="link link-hover">#stockholm</a>
-                        <a class="link link-hover">#dessert</a>
-                        <a class="link link-hover">#farmtotable</a>
-                        <a class="link link-hover">#uppsala</a>
-                        <a class="link link-hover">#gårdsglass</a>
-                        <a class="link link-hover">#väddö</a>           
-                        <a class="link link-hover">#väddögårdsmejeri</a>
-                        <a class="link link-hover">#gårdsmejeri4 / 10ShareInstagram</a>           
-                    </p>
-                    <p class="mt-6">
-                        stellas_kitchen_swedenÅh vad gott 🤤😍ann.cathrine.dunderboKlart raffinerade finemang avancerat vackra glassar.
-                    </p>
-                    <div class="flex justify-evenly mt-8">
-                        <div class="flex justify-center">
-                            <a class="flex space-x-3" href="">
-                                <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (8).jpeg" alt="">
-                                 <h2 class="font-bold">Reply</h2>
-                            </a>
-                        </div>
-                        <div class="flex justify-end">
-                            <a class="flex space-x-3" href="">
-                                <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (1).jpeg" alt="">
-                                <h2 class="font-bold">Instagram</h2>
-                            </a>
-                        </div>
-                    </div>
-                </ul>
-            </div>
-        </div>
-    </div>
-  <form method="dialog" class="modal-backdrop">
-    <button>close</button>
-  </form>
-</dialog>
-
-
-<!-- opening hour 7th card container -->
-
-<button class="" onclick="my_modal_8.showModal()">
-    <div class="container cursor-pointer bg-slate-100">
-        <img class="w-80 h-60" src="./VADDO IMAGES/449822321_860597626095282_7746435140662313070_n.jpg" alt="" class="image">
-        <div class="middle">
-          <strong><a class="link link-secondary no-underline" href="">VaddoGardsmejeri</a></strong>
-        </div>
-    </div>
-</button>
-<dialog id="my_modal_8" class="modal">
-    <div class="modal-box">
-        <div class="drawer drawer-end">
-            <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
-            <div class="drawer-content">
-                <!-- Page content here -->
-                <!-- <label for="my-drawer-4" class="drawer-button btn btn-primary"></label> -->
-                <img src="./VADDO IMAGES/449822321_860597626095282_7746435140662313070_n.jpg" alt="">
-            </div>
-              <div class="">  <!-- class:drawer-side -->
-                <label for="my-drawer-4" aria-label="close sideba" class="drawer-overlay"></label>
-                <ul class="menu text-base-content min-h-full p-4 bg-slate-600 text-white">
-            <!-- Sidebar content here -->
-                    <div>
-                        <a  class="flex space-x-3" href="">
-                            <img class="w-8 h-8 rounded-full" src="./VADDO IMAGES/vaddogardsmejeri.jpg" alt="">
-                            <h2 class="font-bold">VaddoGardsmejeri</h2>
-                        </a>
-                    </div>
-                    <p class="mt-5">Oavsett väder, så förgyller en glasspaus dagen 😀☕🍦
-                        Dela skratt och skapa härliga sommarminnen, vi ses på bondgården 👋 <br>                
-                    </p>
-                    <p class="text-orange-400">
-                        <a class="link link-hover">#väddögårdsmejeri</a>
-                        <a class="link link-hover">#gårdsglass</a>
-                        <a class="link link-hover">#bondgård</a>
-                        <a class="link link-hover">#glass</a>
-                        <a class="link link-hover">#sommar</a>
-                        <a class="link link-hover">#sommarlov</a>
-                        <a class="link link-hover">#väddö</a>
-                        <a class="link link-hover">#roslagen</a>
-                        <a class="link link-hover">#grisslehamn</a>
-                        <a class="link link-hover">#gårdsbutik</a>
-                        <a class="link link-hover">#mejericafé</a>
-                        <a class="link link-hover">#norrtälje</a>
-                        <a class="link link-hover">#stockholm</a>
-                        <a class="link link-hover">#upplevelse</a>
-                        <a class="link link-hover">#hagetillmage</a>
-                        <a class="link link-hover">#sommarisverige</a>
-                        <a class="link link-hover">#fika</a>           
-                        <a class="link link-hover">#kaffe</a>           
-                        <a class="link link-hover">#lantliv</a>           
-                        <a class="link link-hover">#livetpålandet</a>           
-                    </p>
-                    <div class="flex justify-evenly mt-8">
-                        <div class="flex justify-center">
-                            <a class="flex space-x-3" href="">
-                                <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (8).jpeg" alt="">
-                                 <h2 class="font-bold">Reply</h2>
-                            </a>
-                        </div>
-                        <div class="flex justify-end">
-                            <a class="flex space-x-3" href="">
-                                <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (1).jpeg" alt="">
-                                <h2 class="font-bold">Instagram</h2>
-                            </a>
-                        </div>
-                    </div>
-                </ul>
-            </div>
-        </div>
-    </div>
-  <form method="dialog" class="modal-backdrop">
-    <button>close</button>
-  </form>
-</dialog>
-
-
-<!-- opening hour 8th card container -->
-
-<button class="" onclick="my_modal_9.showModal()">
-    <div class="container cursor-pointer bg-slate-100">
-        <img class="w-80 h-60" src="./VADDO IMAGES/450390234_859371962884515_6903236491722144370_n.jpg" alt="" class="image">
-        <div class="middle">
-          <strong><a class="link link-secondary no-underline" href="">VaddoGardsmejeri</a></strong>
-        </div>
-    </div>
-</button>
-<dialog id="my_modal_9" class="modal">
-    <div class="modal-box">
-        <div class="drawer drawer-end">
-            <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
-            <div class="drawer-content">
-                <!-- Page content here -->
-                <!-- <label for="my-drawer-4" class="drawer-button btn btn-primary"></label> -->
-                <img src="./VADDO IMAGES/450390234_859371962884515_6903236491722144370_n.jpg" alt="">
-            </div>
-              <div class="">  <!-- class:drawer-side -->
-                <label for="my-drawer-4" aria-label="close sideba" class="drawer-overlay"></label>
-                <ul class="menu text-base-content min-h-full p-4 bg-slate-600 text-white">
-            <!-- Sidebar content here -->
-                    <div>
-                        <a  class="flex space-x-3" href="">
-                            <img class="w-8 h-8 rounded-full" src="./VADDO IMAGES/vaddogardsmejeri.jpg" alt="">
-                            <h2 class="font-bold">VaddoGardsmejeri</h2>
-                        </a>
-                    </div>
-                    <p class="mt-5">Väddö Cheddar sauce ❤️Sausage <br>
-                        A good grilled sausage in fresh bread with a delicious creamy Väddö Cheddar sauce topping is superbly tasty and simple 😋🌭🧀 <br>
-                        We use @anderssontillman Chili Cheddar grill, the cheese sausage with Väddö cheddar in and then topped with Väddö Cheddar sauce Chili Jalapeno 👌
-                    </p>
-                    <p class="text-orange-400">
-                        <a class="link link-hover">#väddögårdsmejeri</a>
-                        <a class="link link-hover">#grilladkorv</a>
-                        <a class="link link-hover">#anderssontillman</a>
-                        <a class="link link-hover">#lunch</a>
-                        <a class="link link-hover">#middag</a>
-                        <a class="link link-hover">#grill</a>
-                        <a class="link link-hover">#grillat</a>
-                        <a class="link link-hover">#grilla</a>
-                        <a class="link link-hover">#ostsås</a>
-                        <a class="link link-hover">#väddöcheddarsås</a>
-                        <a class="link link-hover">#cheddarsås</a>
-                        <a class="link link-hover">#korv</a>
-                        <a class="link link-hover">#sommarmat</a>
-                        <a class="link link-hover">#chili</a>
-                        <a class="link link-hover">#jalapeno</a>
-                        <a class="link link-hover">#topping</a>
-                        <a class="link link-hover">#dip</a>           
-                    </p>
-                    <div class="flex justify-evenly mt-8">
-                        <div class="flex justify-center">
-                            <a class="flex space-x-3" href="">
-                                <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (8).jpeg" alt="">
-                                 <h2 class="font-bold">Reply</h2>
-                            </a>
-                        </div>
-                        <div class="flex justify-end">
-                            <a class="flex space-x-3" href="">
-                                <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (1).jpeg" alt="">
-                                <h2 class="font-bold">Instagram</h2>
-                            </a>
-                        </div>
-                    </div>
-                </ul>
-            </div>
-        </div>
-    </div>
-  <form method="dialog" class="modal-backdrop">
-    <button>close</button>
-  </form>
-</dialog>
-
-
-<!-- opening hour 9th card container -->
-
-<button class="" onclick="my_modal_10.showModal()">
-    <div class="container cursor-pointer bg-slate-100">
-        <img class="w-80 h-60" src="./VADDO IMAGES/450540819_860488749439503_5722076763215983990_n.jpg" alt="" class="image">
-        <div class="middle">
-          <strong><a class="link link-secondary no-underline" href="">VaddoGardsmejeri</a></strong>
-        </div>
-    </div>
-</button>
-<dialog id="my_modal_10" class="modal">
-    <div class="modal-box">
-        <div class="drawer drawer-end">
-            <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
-            <div class="drawer-content">
-                <!-- Page content here -->
-                <!-- <label for="my-drawer-4" class="drawer-button btn btn-primary"></label> -->
-                <img src="./VADDO IMAGES/450540819_860488749439503_5722076763215983990_n.jpg" alt="">
-            </div>
-              <div class="">  <!-- class:drawer-side -->
-                <label for="my-drawer-4" aria-label="close sideba" class="drawer-overlay"></label>
-                <ul class="menu text-base-content min-h-full p-4 bg-slate-600 text-white">
-            <!-- Sidebar content here -->
-                    <div>
-                        <a  class="flex space-x-3" href="">
-                            <img class="w-8 h-8 rounded-full" src="./VADDO IMAGES/vaddogardsmejeri.jpg" alt="">
-                            <h2 class="font-bold">VaddoGardsmejeri</h2>
-                        </a>
-                    </div>
-                    <p class="mt-5">
-                        Mormors Mums, en glassig favorit på Bondens Glasskalas 🍨 <br>
-                        Rostad mandel med kolasnurr och vaniljglass från gårdens mejeri, toppad med fudgesås, grädde, salta kolapärlor, fudge & kex 😋🤎 <br>
-                    </p>
-                    <p class="text-orange-400">
-                        <a class="link link-hover">#väddögårdsmejeri</a>
-                        <a class="link link-hover">#bondensglasskalas</a>
-                        <a class="link link-hover">#icecream</a>
-                        <a class="link link-hover">#glass</a>
-                        <a class="link link-hover">#middag</a>
-                        <a class="link link-hover">#glassigt</a>
-                        <a class="link link-hover">##freakshake</a>
-                        <a class="link link-hover">#dessert</a>
-                        <a class="link link-hover">#efterrätt</a>
-                        <a class="link link-hover">#väddöcheddarsås</a>
-                        <a class="link link-hover">#cheddarsås</a>
-                        <a class="link link-hover">#gårdsproducerat</a>
-                        <a class="link link-hover">#glassbonden</a>
-                        <a class="link link-hover">#gårdsglass</a>
-                        <a class="link link-hover">#glasslunch</a>
-                        <a class="link link-hover">#upplevelse</a>
-                        <a class="link link-hover">#väddökanal</a>
-                        <a class="link link-hover">#grisslehamn</a>
-                        <a class="link link-hover">#norrtälje</a>
-                        <a class="link link-hover">#stockholm</a>
-                        <a class="link link-hover">#gårdsmejeri</a>
-                        <a class="link link-hover">#roslagen</a>
-                        <a class="link link-hover">#bondgård</a>
-                        <a class="link link-hover">#augusti</a>
-                        <a class="link link-hover">#landet</a>
-                        <a class="link link-hover">#bonde</a>
-                        <a class="link link-hover">#mejeri</a>
-                        <a class="link link-hover">#väddö</a>
-                        <a class="link link-hover">#🍦</a>
-                        <a class="link link-hover">##🇸🇪</a>
-                        <a class="link link-hover">#visitroslagen</a>
-                    </p>
-                    <div class="flex justify-evenly mt-8">
-                        <div class="flex justify-center">
-                            <a class="flex space-x-3" href="">
-                                <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (8).jpeg" alt="">
-                                 <h2 class="font-bold">Reply</h2>
-                            </a>
-                        </div>
-                        <div class="flex justify-end">
-                            <a class="flex space-x-3" href="">
-                                <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (1).jpeg" alt="">
-                                <h2 class="font-bold">Instagram</h2>
-                            </a>
-                        </div>
-                    </div>
-                </ul>
-            </div>
-        </div>
-    </div>
-  <form method="dialog" class="modal-backdrop">
-    <button>close</button>
-  </form>
-</dialog>
-
-
-<!-- opening hour 10th card container -->
-
-<button class="" onclick="my_modal_11.showModal()">
-    <div class="container cursor-pointer bg-slate-100">
-        <img class="w-80 h-60" src="./VADDO IMAGES/450383193_859366456218399_813452972588220898_n.jpg" alt="" class="image">
-        <div class="middle">
-          <strong><a class="link link-secondary no-underline" href="">VaddoGardsmejeri</a></strong>
-        </div>
-    </div>
-</button>
-<dialog id="my_modal_11" class="modal">
-    <div class="modal-box">
-        <div class="drawer drawer-end">
-            <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
-            <div class="drawer-content">
-                <!-- Page content here -->
-                <!-- <label for="my-drawer-4" class="drawer-button btn btn-primary"></label> -->
-                <img src="./VADDO IMAGES/450383193_859366456218399_813452972588220898_n.jpg" alt="">
-            </div>
-              <div class="">  <!-- class:drawer-side -->
-                <label for="my-drawer-4" aria-label="close sideba" class="drawer-overlay"></label>
-                <ul class="menu text-base-content min-h-full p-4 bg-slate-600 text-white">
-            <!-- Sidebar content here -->
-                    <div>
-                        <a  class="flex space-x-3" href="">
-                            <img class="w-8 h-8 rounded-full" src="./VADDO IMAGES/vaddogardsmejeri.jpg" alt="">
-                            <h2 class="font-bold">VaddoGardsmejeri</h2>
-                        </a>
-                    </div>
-                    <p class="mt-5">Väddö Cheddar sauce ❤️Sausage <br>
-                        A good grilled sausage in fresh bread with a delicious creamy Väddö Cheddar sauce topping is superbly tasty and simple 😋🌭🧀 <br>
-                        We use @anderssontillman Chili Cheddar grill, the cheese sausage with Väddö cheddar in and then topped with Väddö Cheddar sauce Chili Jalapeno 👌
-                    </p>
-                    <p class="text-orange-400">
-                        <a class="link link-hover">#väddögårdsmejeri</a>
-                        <a class="link link-hover">#grilladkorv</a>
-                        <a class="link link-hover">#anderssontillman</a>
-                        <a class="link link-hover">#lunch</a>
-                        <a class="link link-hover">#middag</a>
-                        <a class="link link-hover">#grill</a>
-                        <a class="link link-hover">#grillat</a>
-                        <a class="link link-hover">#grilla</a>
-                        <a class="link link-hover">#ostsås</a>
-                        <a class="link link-hover">#väddöcheddarsås</a>
-                        <a class="link link-hover">#cheddarsås</a>
-                        <a class="link link-hover">#korv</a>
-                        <a class="link link-hover">#sommarmat</a>
-                        <a class="link link-hover">#chili</a>
-                        <a class="link link-hover">#jalapeno</a>
-                        <a class="link link-hover">#topping</a>
-                        <a class="link link-hover">#dip</a>           
-                    </p>
-                    <div class="flex justify-evenly mt-8">
-                        <div class="flex justify-center">
-                            <a class="flex space-x-3" href="">
-                                <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (8).jpeg" alt="">
-                                 <h2 class="font-bold">Reply</h2>
-                            </a>
-                        </div>
-                        <div class="flex justify-end">
-                            <a class="flex space-x-3" href="">
-                                <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (1).jpeg" alt="">
-                                <h2 class="font-bold">Instagram</h2>
-                            </a>
-                        </div>
-                    </div>
-                </ul>
-            </div>
-        </div>
-    </div>
-  <form method="dialog" class="modal-backdrop">
-    <button>close</button>
-  </form>
-</dialog>
-
-    </div>
-                     
-        <!-- about us fb instagram tiktok -->
-
+                </div>        
+            </section>
+    <!-- opening hour 4th section -->
+            <section class="hero bg-gray-300 text-gray-600 min-h-screen p-6 mt-4 mb-4">
                 <div>
-                    <h1 class="text-4xl font-bold mt-24 text-center">Visit us</h1>
-                    <div class="flex justify-center space-x-3 mt-10 mb-24">
-                        <a href="https://www.facebook.com"><img title="Facebook" class="w-8 h-8 rounded-3xl" src="./VADDO IMAGES/th.jpeg" alt=""></a>
-                        <a href="https://www.instagram.com"><img title="Instagram" class="w-8 h-8 rounded-3xl" src="./VADDO IMAGES/th (1).jpeg" alt=""></a>
-                        <a href="https://www.tiktok.com"><img title="Tiktok" class="w-8 h-8 rounded-3xl" src="./VADDO IMAGES/th (2).jpeg" alt=""></a>
+                    <div class="hero-content flex-col gap-16 mt-32 mb-40 lg:flex-row-reverse">
+                      <img class="max-w-sm rounded-lg max-sm:w-72" src="./VADDO IMAGES/Vaddo-gardsmejeri-logo-vit-kopia.png" alt="">
+                      <div class="space-y-6">
+                        <h1 class="text-2xl font-semibold">Opening hours:</h1>
+                        <p>Bonden and Burgaren <br>
+                            Open every day at 11-20</p>
+                        <p>Farmer's Ice Cream Festival <br>
+                            Open every day at 11-20</p>
+                        <p>Dairy Café, Farm Shop and Lilla Bondgården <br>
+                            Open every day at 10-17</p>
+                        <p>Farmer's ice cream stalls (Flygfyren, Stora COOP and Väddö) <br>
+                            Open every day at 11-17</p>
+                      </div>
                     </div>
+                
+    
+    <!-- opening hour all card container -->
+    
+    <div class="md:grid md:grid-cols-5 md:gap-6">
+    
+    <!-- opening hour 1st card container -->
+                    
+    <!-- Open the modal using ID.showModal() method -->
+    <button class="" onclick="my_modal_1.showModal()">
+        <div class="container cursor-pointer bg-slate-100">
+            <img class="w-80 h-60" src="./VADDO IMAGES/452513308_869270611894650_6649830248539736385_nfull.jpg" alt="" class="image">
+            <div class="middle">
+              <strong><a class="link link-secondary no-underline" href="">VaddoGardsmejeri</a></strong>
+            </div>
+        </div>
+    </button>
+    <dialog id="my_modal_1" class="modal">
+        <div class="modal-box">
+            <div class="drawer drawer-end">
+                <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+                <div class="drawer-content">
+                    <!-- Page content here -->
+                    <!-- <label for="my-drawer-4" class="drawer-button btn btn-primary"></label> -->
+                    <img src="./VADDO IMAGES/452513308_869270611894650_6649830248539736385_nfull.jpg" alt="">
+                </div>
+                  <div class="">  <!-- class:drawer-side -->
+                    <label for="my-drawer-4" aria-label="close sideba" class="drawer-overlay"></label>
+                    <ul class="menu text-base-content min-h-full p-4 bg-slate-600 text-white">
+                <!-- Sidebar content here -->
+                        <div>
+                            <a  class="flex space-x-3" href="">
+                                <img class="w-8 h-8 rounded-full" src="./VADDO IMAGES/vaddogardsmejeri.jpg" alt="">
+                                <h2 class="font-bold">VaddoGardsmejeri</h2>
+                            </a>
+                        </div>
+                        <p class="mt-5">
+                            Mormors Mums, en glassig favorit på Bondens Glasskalas 🍨 <br>
+                            Rostad mandel med kolasnurr och vaniljglass från gårdens mejeri, toppad med fudgesås, grädde, salta kolapärlor, fudge & kex 😋🤎 <br>
+                        </p>
+                        <p class="text-orange-400">
+                            <a class="link link-hover">#väddögårdsmejeri</a>
+                            <a class="link link-hover">#bondensglasskalas</a>
+                            <a class="link link-hover">#icecream</a>
+                            <a class="link link-hover">#glass</a>
+                            <a class="link link-hover">#middag</a>
+                            <a class="link link-hover">#glassigt</a>
+                            <a class="link link-hover">##freakshake</a>
+                            <a class="link link-hover">#dessert</a>
+                            <a class="link link-hover">#efterrätt</a>
+                            <a class="link link-hover">#väddöcheddarsås</a>
+                            <a class="link link-hover">#cheddarsås</a>
+                            <a class="link link-hover">#gårdsproducerat</a>
+                            <a class="link link-hover">#glassbonden</a>
+                            <a class="link link-hover">#gårdsglass</a>
+                            <a class="link link-hover">#glasslunch</a>
+                            <a class="link link-hover">#upplevelse</a>
+                            <a class="link link-hover">#väddökanal</a>
+                            <a class="link link-hover">#grisslehamn</a>
+                            <a class="link link-hover">#norrtälje</a>
+                            <a class="link link-hover">#stockholm</a>
+                            <a class="link link-hover">#gårdsmejeri</a>
+                            <a class="link link-hover">#roslagen</a>
+                            <a class="link link-hover">#bondgård</a>
+                            <a class="link link-hover">#augusti</a>
+                            <a class="link link-hover">#landet</a>
+                            <a class="link link-hover">#bonde</a>
+                            <a class="link link-hover">#mejeri</a>
+                            <a class="link link-hover">#väddö</a>
+                            <a class="link link-hover">#🍦</a>
+                            <a class="link link-hover">##🇸🇪</a>
+                            <a class="link link-hover">#visitroslagen</a>
+                        </p>
+                        <div class="flex justify-evenly mt-8">
+                            <div class="flex justify-center">
+                                <a class="flex space-x-3" href="">
+                                    <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (8).jpeg" alt="">
+                                     <h2 class="font-bold">Reply</h2>
+                                </a>
+                            </div>
+                            <div class="flex justify-end">
+                                <a class="flex space-x-3" href="">
+                                    <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (1).jpeg" alt="">
+                                    <h2 class="font-bold">Instagram</h2>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="mt-6 mb-6">
+                            decemberjulMums😍😋😋glass_testingDEN HÄR ÄR NÅGOR FÖR MIG!! 🔥😱😩 nu snackar vi grejer
+                        </p>
+                    </ul>
                 </div>
             </div>
-        </section>
-    </header>
-             
-
-<!-- start footer -->
-
-<footer class="bg-gray-400 px-6 p-2 text-gray-50">
-    <div class="flex justify-center mt-12">
-        <img class="w-96" src="./VADDO IMAGES/Vaddo-gardsmejeri-logo-vit-kopia.png" alt="">
-    </div>
-
-    <hr class="mt-16 mb-16">
-    
-    <div class="footer justify-around">
-        <nav>
-            <h6 class="footer-title text-xl">Information</h6>
-            <a class="link link-hover" href="">Refund Policy</a>
-            <a class="link link-hover" href="">Privacy Policy</a>
-            <a class="link link-hover" href="">Conditions of Use</a>
-            <a class="link link-hover" href="">About Us</a>
-            <a class="link link-hover" href="">Contact Us</a>
-          </nav>
-          <nav>
-            <h6 class="footer-title text-xl">Customer service</h6>
-            <a class="link link-hover" href="">Notices</a>
-            <a class="link link-hover" href="">Blog</a>
-            <a class="link link-hover" href="">Recently viewed products</a>
-          </nav>
-        <form>
-            <h6 class="footer-title text-xl">Follow us</h6>
-            <div class="flex space-x-3">
-              <a href="https://www.facebook.com">
-                <img title="Facebook" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/facebook (2).jpeg" alt="">
-              </a>
-              <a href="https://www.twiter.com">
-                <img title="Twiter" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/twiter.jpeg" alt="">
-              </a>
-              <a href="https://www.youtube.com">
-                <img title="Youtube" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/youtube.jpeg" alt="">
-              </a>
-              <a href="https://www.instagram.com">
-                <img title="Instagram" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/instagram.jpeg" alt="">
-              </a>
-            </div>
-          </form>
-          <nav>
-            <h6 class="footer-title text-xl">Download our apps</h6>
-            <a class="link link-hover" href="https://play.google.com/store/games?device=phone">
-                <img class="w-56 rounded-full" src="./VADDO IMAGES/th (10).jpeg" alt="">
-            </a>
-        </nav>
         </div>
+      <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+      </form>
+    </dialog>
+    
+    
+    <!-- opening hour 2nd card container -->
+    
+    <!-- Open the modal using ID.showModal() method -->
+    <button class="" onclick="my_modal_3.showModal()">
+        <div class="container cursor-pointer bg-slate-100">
+            <img class="w-80 h-60 " src="./VADDO IMAGES/452450225_869261481895563_6232327928519031407_nfull.jpg" alt="" class="image">
+            <div class="middle">
+              <strong><a class="link link-secondary no-underline" href="">VaddoGardsmejeri</a></strong>
+            </div>
+        </div>
+    </button>
+    <dialog id="my_modal_3" class="modal">
+        <div class="modal-box">
+            <div class="drawer drawer-end">
+                <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+                <div class="drawer-content">
+                    <!-- Page content here -->
+                    <!-- <label for="my-drawer-4" class="drawer-button btn btn-primary"></label> -->
+                    <img src="./VADDO IMAGES/452450225_869261481895563_6232327928519031407_nfull.jpg" alt="">
+                </div>
+                  <div class="">  <!-- class:drawer-side -->
+                    <label for="my-drawer-4" aria-label="close sideba" class="drawer-overlay"></label>
+                    <ul class="menu text-base-content min-h-full p-4 bg-slate-600 text-white">
+                <!-- Sidebar content here -->
+                        <div>
+                            <a  class="flex space-x-3" href="">
+                                <img class="w-8 h-8 rounded-full" src="./VADDO IMAGES/vaddogardsmejeri.jpg" alt="">
+                                <h2 class="font-bold">VaddoGardsmejeri</h2>
+                            </a>
+                        </div>
+                        <p class="mt-5">Väddö Cheddar sauce ❤️Sausage <br>
+                            A good grilled sausage in fresh bread with a delicious creamy Väddö Cheddar sauce topping is superbly tasty and simple 😋🌭🧀 <br>
+                            We use @anderssontillman Chili Cheddar grill, the cheese sausage with Väddö cheddar in and then topped with Väddö Cheddar sauce Chili Jalapeno 👌
+                        </p>
+                        <p class="text-orange-400">
+                            <a class="link link-hover">#väddögårdsmejeri</a>
+                            <a class="link link-hover">#grilladkorv</a>
+                            <a class="link link-hover">#anderssontillman</a>
+                            <a class="link link-hover">#lunch</a>
+                            <a class="link link-hover">#middag</a>
+                            <a class="link link-hover">#grill</a>
+                            <a class="link link-hover">#grillat</a>
+                            <a class="link link-hover">#grilla</a>
+                            <a class="link link-hover">#ostsås</a>
+                            <a class="link link-hover">#väddöcheddarsås</a>
+                            <a class="link link-hover">#cheddarsås</a>
+                            <a class="link link-hover">#korv</a>
+                            <a class="link link-hover">#sommarmat</a>
+                            <a class="link link-hover">#chili</a>
+                            <a class="link link-hover">#jalapeno</a>
+                            <a class="link link-hover">#topping</a>
+                            <a class="link link-hover">#dip</a>           
+                        </p>
+                        <div class="flex justify-evenly mt-8">
+                            <div class="flex justify-center">
+                                <a class="flex space-x-3" href="">
+                                    <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (8).jpeg" alt="">
+                                     <h2 class="font-bold">Reply</h2>
+                                </a>
+                            </div>
+                            <div class="flex justify-end">
+                                <a class="flex space-x-3" href="">
+                                    <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (1).jpeg" alt="">
+                                    <h2 class="font-bold">Instagram</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+      </form>
+    </dialog>
+    
+    
+    <!-- opening hour 3rd card container -->
+    
+    <button class="" onclick="my_modal_4.showModal()">
+        <div class="container cursor-pointer bg-slate-100">
+            <img class="w-80 h-60" src="./VADDO IMAGES/452692134_869252918563086_3797919331696984713_nfull.jpg" alt="" class="image">
+            <div class="middle">
+              <strong><a class="link link-secondary no-underline" href="">VaddoGardsmejeri</a></strong>
+            </div>
+        </div>
+    </button>
+    <dialog id="my_modal_4" class="modal">
+        <div class="modal-box">
+            <div class="drawer drawer-end">
+                <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+                <div class="drawer-content">
+                    <!-- Page content here -->
+                    <!-- <label for="my-drawer-4" class="drawer-button btn btn-primary"></label> -->
+                    <img src="./VADDO IMAGES/452692134_869252918563086_3797919331696984713_nfull.jpg" alt="">
+                </div>
+                  <div class="">  <!-- class:drawer-side -->
+                    <label for="my-drawer-4" aria-label="close sideba" class="drawer-overlay"></label>
+                    <ul class="menu text-base-content min-h-full p-4 bg-slate-600 text-white">
+                <!-- Sidebar content here -->
+                        <div>
+                            <a  class="flex space-x-3" href="">
+                                <img class="w-8 h-8 rounded-full" src="./VADDO IMAGES/vaddogardsmejeri.jpg" alt="">
+                                <h2 class="font-bold">VaddoGardsmejeri</h2>
+                            </a>
+                        </div>
+                        <p class="mt-5">Oavsett väder, så förgyller en glasspaus dagen 😀☕🍦
+                            Dela skratt och skapa härliga sommarminnen, vi ses på bondgården 👋 <br>                
+                        </p>
+                        <p class="text-orange-400">
+                            <a class="link link-hover">#väddögårdsmejeri</a>
+                            <a class="link link-hover">#gårdsglass</a>
+                            <a class="link link-hover">#bondgård</a>
+                            <a class="link link-hover">#glass</a>
+                            <a class="link link-hover">#sommar</a>
+                            <a class="link link-hover">#sommarlov</a>
+                            <a class="link link-hover">#väddö</a>
+                            <a class="link link-hover">#roslagen</a>
+                            <a class="link link-hover">#grisslehamn</a>
+                            <a class="link link-hover">#gårdsbutik</a>
+                            <a class="link link-hover">#mejericafé</a>
+                            <a class="link link-hover">#norrtälje</a>
+                            <a class="link link-hover">#stockholm</a>
+                            <a class="link link-hover">#upplevelse</a>
+                            <a class="link link-hover">#hagetillmage</a>
+                            <a class="link link-hover">#sommarisverige</a>
+                            <a class="link link-hover">#fika</a>           
+                            <a class="link link-hover">#kaffe</a>           
+                            <a class="link link-hover">#lantliv</a>           
+                            <a class="link link-hover">#livetpålandet</a>           
+                        </p>
+                        <div class="flex justify-evenly mt-8">
+                            <div class="flex justify-center">
+                                <a class="flex space-x-3" href="">
+                                    <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (8).jpeg" alt="">
+                                     <h2 class="font-bold">Reply</h2>
+                                </a>
+                            </div>
+                            <div class="flex justify-end">
+                                <a class="flex space-x-3" href="">
+                                    <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (1).jpeg" alt="">
+                                    <h2 class="font-bold">Instagram</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+      </form>
+    </dialog>
+    
+    
+    <!-- opening hour 4th card container -->
+    
+    <button class="" onclick="my_modal_5.showModal()">
+        <div class="container cursor-pointer bg-slate-100">
+            <img class="w-80 h-60" src="./VADDO IMAGES/452022639_866216775533367_4267635767238575209_nfull.jpg" alt="" class="image">
+            <div class="middle">
+              <strong><a class="link link-secondary no-underline" href="">VaddoGardsmejeri</a></strong>
+            </div>
+        </div>
+    </button>
+    <dialog id="my_modal_5" class="modal">
+        <div class="modal-box">
+            <div class="drawer drawer-end">
+                <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+                <div class="drawer-content">
+                    <!-- Page content here -->
+                    <!-- <label for="my-drawer-4" class="drawer-button btn btn-primary"></label> -->
+                    <img src="./VADDO IMAGES/452022639_866216775533367_4267635767238575209_nfull.jpg" alt="">
+                </div>
+                  <div class="">  <!-- class:drawer-side -->
+                    <label for="my-drawer-4" aria-label="close sideba" class="drawer-overlay"></label>
+                    <ul class="menu text-base-content min-h-full p-4 bg-slate-600 text-white">
+                <!-- Sidebar content here -->
+                        <div>
+                            <a  class="flex space-x-3" href="">
+                                <img class="w-8 h-8 rounded-full" src="./VADDO IMAGES/vaddogardsmejeri.jpg" alt="">
+                                <h2 class="font-bold">VaddoGardsmejeri</h2>
+                            </a>
+                        </div>
+                        <p class="mt-5">Önskar dig en riktigt glassig söndag 😎🍦☀️</p>
+                        <p class="text-orange-400 mt-6">
+                            <a class="link link-hover">#väddögårdsmejeri</a>
+                            <a class="link link-hover">#bondensglasskalas</a>
+                            <a class="link link-hover">#väddöglass</a>
+                            <a class="link link-hover">#glassigt</a>
+                            <a class="link link-hover">#icecream</a>
+                            <a class="link link-hover">#upplevelse</a>
+                            <a class="link link-hover">#grisslehamn</a>
+                            <a class="link link-hover">#hagetillmage</a>
+                            <a class="link link-hover">#utflykt</a>
+                            <a class="link link-hover">#roslagen</a>
+                            <a class="link link-hover">#norrtälje</a>
+                            <a class="link link-hover">#stockholm</a>
+                            <a class="link link-hover">#dessert</a>
+                            <a class="link link-hover">#farmtotable</a>
+                            <a class="link link-hover">#uppsala</a>
+                            <a class="link link-hover">#gårdsglass</a>
+                            <a class="link link-hover">#väddö</a>           
+                            <a class="link link-hover">#väddögårdsmejeri</a>
+                            <a class="link link-hover">#gårdsmejeri4 / 10ShareInstagram</a>           
+                        </p>
+                        <p class="mt-6">
+                            stellas_kitchen_swedenÅh vad gott 🤤😍ann.cathrine.dunderboKlart raffinerade finemang avancerat vackra glassar.
+                        </p>
+                        <div class="flex justify-evenly mt-8">
+                            <div class="flex justify-center">
+                                <a class="flex space-x-3" href="">
+                                    <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (8).jpeg" alt="">
+                                     <h2 class="font-bold">Reply</h2>
+                                </a>
+                            </div>
+                            <div class="flex justify-end">
+                                <a class="flex space-x-3" href="">
+                                    <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (1).jpeg" alt="">
+                                    <h2 class="font-bold">Instagram</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+      </form>
+    </dialog>
+    
+    
+    <!-- opening hour 5th card container -->
+    
+    <button class="" onclick="my_modal_6.showModal()">
+        <div class="container cursor-pointer bg-slate-100">
+            <img class="w-80 h-60" src="./VADDO IMAGES/450012433_859340199554358_3221304865705498054_n.jpg" alt="" class="image">
+            <div class="middle">
+              <strong><a class="link link-secondary no-underline" href="">VaddoGardsmejeri</a></strong>
+            </div>
+        </div>
+    </button>
+    <dialog id="my_modal_6" class="modal">
+        <div class="modal-box">
+            <div class="drawer drawer-end">
+                <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+                <div class="drawer-content">
+                    <!-- Page content here -->
+                    <!-- <label for="my-drawer-4" class="drawer-button btn btn-primary"></label> -->
+                    <img src="./VADDO IMAGES/450012433_859340199554358_3221304865705498054_n.jpg" alt="">
+                </div>
+                  <div class="">  <!-- class:drawer-side -->
+                    <label for="my-drawer-4" aria-label="close sideba" class="drawer-overlay"></label>
+                    <ul class="menu text-base-content min-h-full p-4 bg-slate-600 text-white">
+                <!-- Sidebar content here -->
+                        <div>
+                            <a  class="flex space-x-3" href="">
+                                <img class="w-8 h-8 rounded-full" src="./VADDO IMAGES/vaddogardsmejeri.jpg" alt="">
+                                <h2 class="font-bold">VaddoGardsmejeri</h2>
+                            </a>
+                        </div>
+                        <p class="mt-5">Väddö Cheddar sauce ❤️Sausage <br>
+                            A good grilled sausage in fresh bread with a delicious creamy Väddö Cheddar sauce topping is superbly tasty and simple 😋🌭🧀 <br>
+                            We use @anderssontillman Chili Cheddar grill, the cheese sausage with Väddö cheddar in and then topped with Väddö Cheddar sauce Chili Jalapeno 👌
+                        </p>
+                        <p class="text-orange-400">
+                            <a class="link link-hover">#väddögårdsmejeri</a>
+                            <a class="link link-hover">#grilladkorv</a>
+                            <a class="link link-hover">#anderssontillman</a>
+                            <a class="link link-hover">#lunch</a>
+                            <a class="link link-hover">#middag</a>
+                            <a class="link link-hover">#grill</a>
+                            <a class="link link-hover">#grillat</a>
+                            <a class="link link-hover">#grilla</a>
+                            <a class="link link-hover">#ostsås</a>
+                            <a class="link link-hover">#väddöcheddarsås</a>
+                            <a class="link link-hover">#cheddarsås</a>
+                            <a class="link link-hover">#korv</a>
+                            <a class="link link-hover">#sommarmat</a>
+                            <a class="link link-hover">#chili</a>
+                            <a class="link link-hover">#jalapeno</a>
+                            <a class="link link-hover">#topping</a>
+                            <a class="link link-hover">#dip</a>           
+                        </p>
+                        <div class="flex justify-evenly mt-8">
+                            <div class="flex justify-center">
+                                <a class="flex space-x-3" href="">
+                                    <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (8).jpeg" alt="">
+                                     <h2 class="font-bold">Reply</h2>
+                                </a>
+                            </div>
+                            <div class="flex justify-end">
+                                <a class="flex space-x-3" href="">
+                                    <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (1).jpeg" alt="">
+                                    <h2 class="font-bold">Instagram</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+      </form>
+    </dialog>
+     
+    
+    <!-- opening hour 6th card container -->
+    
+    
+    <button class="" onclick="my_modal_7.showModal()">
+        <div class="container cursor-pointer bg-slate-100">
+            <img class="w-80 h-60" src="./VADDO IMAGES/452096045_866204268867951_5866425892348069282_nfull.jpg" alt="" class="image">
+            <div class="middle">
+              <strong><a class="link link-secondary no-underline" href="">VaddoGardsmejeri</a></strong>
+            </div>
+        </div>
+    </button>
+    <dialog id="my_modal_7" class="modal">
+        <div class="modal-box">
+            <div class="drawer drawer-end">
+                <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+                <div class="drawer-content">
+                    <!-- Page content here -->
+                    <!-- <label for="my-drawer-4" class="drawer-button btn btn-primary"></label> -->
+                    <img src="./VADDO IMAGES/452096045_866204268867951_5866425892348069282_nfull.jpg" alt="">
+                </div>
+                  <div class="">  <!-- class:drawer-side -->
+                    <label for="my-drawer-4" aria-label="close sideba" class="drawer-overlay"></label>
+                    <ul class="menu text-base-content min-h-full p-4 bg-slate-600 text-white">
+                <!-- Sidebar content here -->
+                        <div>
+                            <a  class="flex space-x-3" href="">
+                                <img class="w-8 h-8 rounded-full" src="./VADDO IMAGES/vaddogardsmejeri.jpg" alt="">
+                                <h2 class="font-bold">VaddoGardsmejeri</h2>
+                            </a>
+                        </div>
+                        <p class="mt-5">Önskar dig en riktigt glassig söndag 😎🍦☀️</p>
+                        <p class="text-orange-400 mt-6">
+                            <a class="link link-hover">#väddögårdsmejeri</a>
+                            <a class="link link-hover">#bondensglasskalas</a>
+                            <a class="link link-hover">#väddöglass</a>
+                            <a class="link link-hover">#glassigt</a>
+                            <a class="link link-hover">#icecream</a>
+                            <a class="link link-hover">#upplevelse</a>
+                            <a class="link link-hover">#grisslehamn</a>
+                            <a class="link link-hover">#hagetillmage</a>
+                            <a class="link link-hover">#utflykt</a>
+                            <a class="link link-hover">#roslagen</a>
+                            <a class="link link-hover">#norrtälje</a>
+                            <a class="link link-hover">#stockholm</a>
+                            <a class="link link-hover">#dessert</a>
+                            <a class="link link-hover">#farmtotable</a>
+                            <a class="link link-hover">#uppsala</a>
+                            <a class="link link-hover">#gårdsglass</a>
+                            <a class="link link-hover">#väddö</a>           
+                            <a class="link link-hover">#väddögårdsmejeri</a>
+                            <a class="link link-hover">#gårdsmejeri4 / 10ShareInstagram</a>           
+                        </p>
+                        <p class="mt-6">
+                            stellas_kitchen_swedenÅh vad gott 🤤😍ann.cathrine.dunderboKlart raffinerade finemang avancerat vackra glassar.
+                        </p>
+                        <div class="flex justify-evenly mt-8">
+                            <div class="flex justify-center">
+                                <a class="flex space-x-3" href="">
+                                    <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (8).jpeg" alt="">
+                                     <h2 class="font-bold">Reply</h2>
+                                </a>
+                            </div>
+                            <div class="flex justify-end">
+                                <a class="flex space-x-3" href="">
+                                    <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (1).jpeg" alt="">
+                                    <h2 class="font-bold">Instagram</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+      </form>
+    </dialog>
+    
+    
+    <!-- opening hour 7th card container -->
+    
+    <button class="" onclick="my_modal_8.showModal()">
+        <div class="container cursor-pointer bg-slate-100">
+            <img class="w-80 h-60" src="./VADDO IMAGES/449822321_860597626095282_7746435140662313070_n.jpg" alt="" class="image">
+            <div class="middle">
+              <strong><a class="link link-secondary no-underline" href="">VaddoGardsmejeri</a></strong>
+            </div>
+        </div>
+    </button>
+    <dialog id="my_modal_8" class="modal">
+        <div class="modal-box">
+            <div class="drawer drawer-end">
+                <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+                <div class="drawer-content">
+                    <!-- Page content here -->
+                    <!-- <label for="my-drawer-4" class="drawer-button btn btn-primary"></label> -->
+                    <img src="./VADDO IMAGES/449822321_860597626095282_7746435140662313070_n.jpg" alt="">
+                </div>
+                  <div class="">  <!-- class:drawer-side -->
+                    <label for="my-drawer-4" aria-label="close sideba" class="drawer-overlay"></label>
+                    <ul class="menu text-base-content min-h-full p-4 bg-slate-600 text-white">
+                <!-- Sidebar content here -->
+                        <div>
+                            <a  class="flex space-x-3" href="">
+                                <img class="w-8 h-8 rounded-full" src="./VADDO IMAGES/vaddogardsmejeri.jpg" alt="">
+                                <h2 class="font-bold">VaddoGardsmejeri</h2>
+                            </a>
+                        </div>
+                        <p class="mt-5">Oavsett väder, så förgyller en glasspaus dagen 😀☕🍦
+                            Dela skratt och skapa härliga sommarminnen, vi ses på bondgården 👋 <br>                
+                        </p>
+                        <p class="text-orange-400">
+                            <a class="link link-hover">#väddögårdsmejeri</a>
+                            <a class="link link-hover">#gårdsglass</a>
+                            <a class="link link-hover">#bondgård</a>
+                            <a class="link link-hover">#glass</a>
+                            <a class="link link-hover">#sommar</a>
+                            <a class="link link-hover">#sommarlov</a>
+                            <a class="link link-hover">#väddö</a>
+                            <a class="link link-hover">#roslagen</a>
+                            <a class="link link-hover">#grisslehamn</a>
+                            <a class="link link-hover">#gårdsbutik</a>
+                            <a class="link link-hover">#mejericafé</a>
+                            <a class="link link-hover">#norrtälje</a>
+                            <a class="link link-hover">#stockholm</a>
+                            <a class="link link-hover">#upplevelse</a>
+                            <a class="link link-hover">#hagetillmage</a>
+                            <a class="link link-hover">#sommarisverige</a>
+                            <a class="link link-hover">#fika</a>           
+                            <a class="link link-hover">#kaffe</a>           
+                            <a class="link link-hover">#lantliv</a>           
+                            <a class="link link-hover">#livetpålandet</a>           
+                        </p>
+                        <div class="flex justify-evenly mt-8">
+                            <div class="flex justify-center">
+                                <a class="flex space-x-3" href="">
+                                    <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (8).jpeg" alt="">
+                                     <h2 class="font-bold">Reply</h2>
+                                </a>
+                            </div>
+                            <div class="flex justify-end">
+                                <a class="flex space-x-3" href="">
+                                    <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (1).jpeg" alt="">
+                                    <h2 class="font-bold">Instagram</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+      </form>
+    </dialog>
+    
+    
+    <!-- opening hour 8th card container -->
+    
+    <button class="" onclick="my_modal_9.showModal()">
+        <div class="container cursor-pointer bg-slate-100">
+            <img class="w-80 h-60" src="./VADDO IMAGES/450390234_859371962884515_6903236491722144370_n.jpg" alt="" class="image">
+            <div class="middle">
+              <strong><a class="link link-secondary no-underline" href="">VaddoGardsmejeri</a></strong>
+            </div>
+        </div>
+    </button>
+    <dialog id="my_modal_9" class="modal">
+        <div class="modal-box">
+            <div class="drawer drawer-end">
+                <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+                <div class="drawer-content">
+                    <!-- Page content here -->
+                    <!-- <label for="my-drawer-4" class="drawer-button btn btn-primary"></label> -->
+                    <img src="./VADDO IMAGES/450390234_859371962884515_6903236491722144370_n.jpg" alt="">
+                </div>
+                  <div class="">  <!-- class:drawer-side -->
+                    <label for="my-drawer-4" aria-label="close sideba" class="drawer-overlay"></label>
+                    <ul class="menu text-base-content min-h-full p-4 bg-slate-600 text-white">
+                <!-- Sidebar content here -->
+                        <div>
+                            <a  class="flex space-x-3" href="">
+                                <img class="w-8 h-8 rounded-full" src="./VADDO IMAGES/vaddogardsmejeri.jpg" alt="">
+                                <h2 class="font-bold">VaddoGardsmejeri</h2>
+                            </a>
+                        </div>
+                        <p class="mt-5">Väddö Cheddar sauce ❤️Sausage <br>
+                            A good grilled sausage in fresh bread with a delicious creamy Väddö Cheddar sauce topping is superbly tasty and simple 😋🌭🧀 <br>
+                            We use @anderssontillman Chili Cheddar grill, the cheese sausage with Väddö cheddar in and then topped with Väddö Cheddar sauce Chili Jalapeno 👌
+                        </p>
+                        <p class="text-orange-400">
+                            <a class="link link-hover">#väddögårdsmejeri</a>
+                            <a class="link link-hover">#grilladkorv</a>
+                            <a class="link link-hover">#anderssontillman</a>
+                            <a class="link link-hover">#lunch</a>
+                            <a class="link link-hover">#middag</a>
+                            <a class="link link-hover">#grill</a>
+                            <a class="link link-hover">#grillat</a>
+                            <a class="link link-hover">#grilla</a>
+                            <a class="link link-hover">#ostsås</a>
+                            <a class="link link-hover">#väddöcheddarsås</a>
+                            <a class="link link-hover">#cheddarsås</a>
+                            <a class="link link-hover">#korv</a>
+                            <a class="link link-hover">#sommarmat</a>
+                            <a class="link link-hover">#chili</a>
+                            <a class="link link-hover">#jalapeno</a>
+                            <a class="link link-hover">#topping</a>
+                            <a class="link link-hover">#dip</a>           
+                        </p>
+                        <div class="flex justify-evenly mt-8">
+                            <div class="flex justify-center">
+                                <a class="flex space-x-3" href="">
+                                    <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (8).jpeg" alt="">
+                                     <h2 class="font-bold">Reply</h2>
+                                </a>
+                            </div>
+                            <div class="flex justify-end">
+                                <a class="flex space-x-3" href="">
+                                    <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (1).jpeg" alt="">
+                                    <h2 class="font-bold">Instagram</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+      </form>
+    </dialog>
+    
+    
+    <!-- opening hour 9th card container -->
+    
+    <button class="" onclick="my_modal_10.showModal()">
+        <div class="container cursor-pointer bg-slate-100">
+            <img class="w-80 h-60" src="./VADDO IMAGES/450540819_860488749439503_5722076763215983990_n.jpg" alt="" class="image">
+            <div class="middle">
+              <strong><a class="link link-secondary no-underline" href="">VaddoGardsmejeri</a></strong>
+            </div>
+        </div>
+    </button>
+    <dialog id="my_modal_10" class="modal">
+        <div class="modal-box">
+            <div class="drawer drawer-end">
+                <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+                <div class="drawer-content">
+                    <!-- Page content here -->
+                    <!-- <label for="my-drawer-4" class="drawer-button btn btn-primary"></label> -->
+                    <img src="./VADDO IMAGES/450540819_860488749439503_5722076763215983990_n.jpg" alt="">
+                </div>
+                  <div class="">  <!-- class:drawer-side -->
+                    <label for="my-drawer-4" aria-label="close sideba" class="drawer-overlay"></label>
+                    <ul class="menu text-base-content min-h-full p-4 bg-slate-600 text-white">
+                <!-- Sidebar content here -->
+                        <div>
+                            <a  class="flex space-x-3" href="">
+                                <img class="w-8 h-8 rounded-full" src="./VADDO IMAGES/vaddogardsmejeri.jpg" alt="">
+                                <h2 class="font-bold">VaddoGardsmejeri</h2>
+                            </a>
+                        </div>
+                        <p class="mt-5">
+                            Mormors Mums, en glassig favorit på Bondens Glasskalas 🍨 <br>
+                            Rostad mandel med kolasnurr och vaniljglass från gårdens mejeri, toppad med fudgesås, grädde, salta kolapärlor, fudge & kex 😋🤎 <br>
+                        </p>
+                        <p class="text-orange-400">
+                            <a class="link link-hover">#väddögårdsmejeri</a>
+                            <a class="link link-hover">#bondensglasskalas</a>
+                            <a class="link link-hover">#icecream</a>
+                            <a class="link link-hover">#glass</a>
+                            <a class="link link-hover">#middag</a>
+                            <a class="link link-hover">#glassigt</a>
+                            <a class="link link-hover">##freakshake</a>
+                            <a class="link link-hover">#dessert</a>
+                            <a class="link link-hover">#efterrätt</a>
+                            <a class="link link-hover">#väddöcheddarsås</a>
+                            <a class="link link-hover">#cheddarsås</a>
+                            <a class="link link-hover">#gårdsproducerat</a>
+                            <a class="link link-hover">#glassbonden</a>
+                            <a class="link link-hover">#gårdsglass</a>
+                            <a class="link link-hover">#glasslunch</a>
+                            <a class="link link-hover">#upplevelse</a>
+                            <a class="link link-hover">#väddökanal</a>
+                            <a class="link link-hover">#grisslehamn</a>
+                            <a class="link link-hover">#norrtälje</a>
+                            <a class="link link-hover">#stockholm</a>
+                            <a class="link link-hover">#gårdsmejeri</a>
+                            <a class="link link-hover">#roslagen</a>
+                            <a class="link link-hover">#bondgård</a>
+                            <a class="link link-hover">#augusti</a>
+                            <a class="link link-hover">#landet</a>
+                            <a class="link link-hover">#bonde</a>
+                            <a class="link link-hover">#mejeri</a>
+                            <a class="link link-hover">#väddö</a>
+                            <a class="link link-hover">#🍦</a>
+                            <a class="link link-hover">##🇸🇪</a>
+                            <a class="link link-hover">#visitroslagen</a>
+                        </p>
+                        <div class="flex justify-evenly mt-8">
+                            <div class="flex justify-center">
+                                <a class="flex space-x-3" href="">
+                                    <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (8).jpeg" alt="">
+                                     <h2 class="font-bold">Reply</h2>
+                                </a>
+                            </div>
+                            <div class="flex justify-end">
+                                <a class="flex space-x-3" href="">
+                                    <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (1).jpeg" alt="">
+                                    <h2 class="font-bold">Instagram</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+      </form>
+    </dialog>
+    
+    
+    <!-- opening hour 10th card container -->
+    
+    <button class="" onclick="my_modal_11.showModal()">
+        <div class="container cursor-pointer bg-slate-100">
+            <img class="w-80 h-60" src="./VADDO IMAGES/450383193_859366456218399_813452972588220898_n.jpg" alt="" class="image">
+            <div class="middle">
+              <strong><a class="link link-secondary no-underline" href="">VaddoGardsmejeri</a></strong>
+            </div>
+        </div>
+    </button>
+    <dialog id="my_modal_11" class="modal">
+        <div class="modal-box">
+            <div class="drawer drawer-end">
+                <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+                <div class="drawer-content">
+                    <!-- Page content here -->
+                    <!-- <label for="my-drawer-4" class="drawer-button btn btn-primary"></label> -->
+                    <img src="./VADDO IMAGES/450383193_859366456218399_813452972588220898_n.jpg" alt="">
+                </div>
+                  <div class="">  <!-- class:drawer-side -->
+                    <label for="my-drawer-4" aria-label="close sideba" class="drawer-overlay"></label>
+                    <ul class="menu text-base-content min-h-full p-4 bg-slate-600 text-white">
+                <!-- Sidebar content here -->
+                        <div>
+                            <a  class="flex space-x-3" href="">
+                                <img class="w-8 h-8 rounded-full" src="./VADDO IMAGES/vaddogardsmejeri.jpg" alt="">
+                                <h2 class="font-bold">VaddoGardsmejeri</h2>
+                            </a>
+                        </div>
+                        <p class="mt-5">Väddö Cheddar sauce ❤️Sausage <br>
+                            A good grilled sausage in fresh bread with a delicious creamy Väddö Cheddar sauce topping is superbly tasty and simple 😋🌭🧀 <br>
+                            We use @anderssontillman Chili Cheddar grill, the cheese sausage with Väddö cheddar in and then topped with Väddö Cheddar sauce Chili Jalapeno 👌
+                        </p>
+                        <p class="text-orange-400">
+                            <a class="link link-hover">#väddögårdsmejeri</a>
+                            <a class="link link-hover">#grilladkorv</a>
+                            <a class="link link-hover">#anderssontillman</a>
+                            <a class="link link-hover">#lunch</a>
+                            <a class="link link-hover">#middag</a>
+                            <a class="link link-hover">#grill</a>
+                            <a class="link link-hover">#grillat</a>
+                            <a class="link link-hover">#grilla</a>
+                            <a class="link link-hover">#ostsås</a>
+                            <a class="link link-hover">#väddöcheddarsås</a>
+                            <a class="link link-hover">#cheddarsås</a>
+                            <a class="link link-hover">#korv</a>
+                            <a class="link link-hover">#sommarmat</a>
+                            <a class="link link-hover">#chili</a>
+                            <a class="link link-hover">#jalapeno</a>
+                            <a class="link link-hover">#topping</a>
+                            <a class="link link-hover">#dip</a>           
+                        </p>
+                        <div class="flex justify-evenly mt-8">
+                            <div class="flex justify-center">
+                                <a class="flex space-x-3" href="">
+                                    <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (8).jpeg" alt="">
+                                     <h2 class="font-bold">Reply</h2>
+                                </a>
+                            </div>
+                            <div class="flex justify-end">
+                                <a class="flex space-x-3" href="">
+                                    <img class="w-6 h-6 rounded-full" src="./VADDO IMAGES/th (1).jpeg" alt="">
+                                    <h2 class="font-bold">Instagram</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+      </form>
+    </dialog>
+    
+        </div>
+                         
+            <!-- about us fb instagram tiktok -->
+    
+                    <div>
+                        <h1 class="text-4xl font-bold mt-24 text-center">Visit us</h1>
+                        <div class="flex justify-center space-x-3 mt-10 mb-24">
+                            <a href="https://www.facebook.com"><img title="Facebook" class="w-8 h-8 rounded-3xl" src="./VADDO IMAGES/th.jpeg" alt=""></a>
+                            <a href="https://www.instagram.com"><img title="Instagram" class="w-8 h-8 rounded-3xl" src="./VADDO IMAGES/th (1).jpeg" alt=""></a>
+                            <a href="https://www.tiktok.com"><img title="Tiktok" class="w-8 h-8 rounded-3xl" src="./VADDO IMAGES/th (2).jpeg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+                 
+    
+    <!-- start footer -->
+    
+    <footer class="bg-gray-400 px-6 p-2 text-gray-50">
+        <div class="flex justify-center mt-12">
+            <img class="w-96" src="./VADDO IMAGES/Vaddo-gardsmejeri-logo-vit-kopia.png" alt="">
+        </div>
+    
+        <hr class="mt-16 mb-16">
         
-          <hr class="mt-10 mb-6">
+        <div class="footer justify-around">
+            <nav>
+                <h6 class="footer-title text-xl">Information</h6>
+                <a class="link link-hover" href="">Refund Policy</a>
+                <a class="link link-hover" href="">Privacy Policy</a>
+                <a class="link link-hover" href="">Conditions of Use</a>
+                <a class="link link-hover" href="">About Us</a>
+                <a class="link link-hover" href="">Contact Us</a>
+              </nav>
+              <nav>
+                <h6 class="footer-title text-xl">Customer service</h6>
+                <a class="link link-hover" href="">Notices</a>
+                <a class="link link-hover" href="">Blog</a>
+                <a class="link link-hover" href="">Recently viewed products</a>
+              </nav>
+            <form>
+                <h6 class="footer-title text-xl">Follow us</h6>
+                <div class="flex space-x-3">
+                  <a href="https://www.facebook.com">
+                    <img title="Facebook" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/facebook (2).jpeg" alt="">
+                  </a>
+                  <a href="https://www.twiter.com">
+                    <img title="Twiter" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/twiter.jpeg" alt="">
+                  </a>
+                  <a href="https://www.youtube.com">
+                    <img title="Youtube" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/youtube.jpeg" alt="">
+                  </a>
+                  <a href="https://www.instagram.com">
+                    <img title="Instagram" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/instagram.jpeg" alt="">
+                  </a>
+                </div>
+              </form>
+              <nav>
+                <h6 class="footer-title text-xl">Download our apps</h6>
+                <a class="link link-hover" href="https://play.google.com/store/games?device=phone">
+                    <img class="w-56 rounded-full" src="./VADDO IMAGES/th (10).jpeg" alt="">
+                </a>
+            </nav>
+            </div>
+            
+              <hr class="mt-10 mb-6">
+        
+            <p class="mt-5 text-center text-gray-200">@All Rights Reserved,  <br>  2024, Väddö Gårdsmejeri.</p>
+        
+    </footer>
+     -->
     
-        <p class="mt-5 text-center text-gray-200">@All Rights Reserved,  <br>  2024, Väddö Gårdsmejeri.</p>
-    
-</footer>
-
-
 <!-- footer end -->
 
 
