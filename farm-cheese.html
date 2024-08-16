@@ -10,6 +10,8 @@
     <!-- daisyui and tailwinds link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+        <!-- flow bite link-->
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
 
 <!-- font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,47 +31,67 @@
 <body>
 
 
-<header class="poppins px-2">
+<header class="poppins md:px-2">
 
-    <!-- font top nav bar -->
-    <nav class="p-4">
-        <ul class="flex justify-around font-semibold">
-            <li class="hover:text-orange-400"> <a class="link hover:text-orange-500 no-underline" href="index.html">HOME</a></li>
-            <div class="dropdown dropdown-hover mr-6">
-                <li class="">
-                    <a class="link hover:text-orange-500 no-underline">ABOUT US</a>
-                </li>
-                    <ul  class="dropdown-content menu rounded-box z-[1] w-52 p-2 shadow">
-                        <li> <a href="about-the-farmhouse.html" class="link no-underline hover:text-zinc-500">THE FARMHOUSE</a></li>
-                        <li> <a href="about-the-dairy.html" class="link hover:text-zinc-500 no-underline">THE DAIRY</a></li>
-                    </ul>
-            </div>
-            <li class=""> <a class="link hover:text-orange-500 no-underline" href="contact-us.html">CONTACT US</a></li>
-            <li class=""> <a class="link hover:text-orange-500 no-underline" href="ice-cream-resturants.html">MORE</a></li>
+  <!-- navbar section -->
+
+  <nav class="bg-white border-gray-200 dark:bg-gray-900">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div class="flex items-center md:space-x-3 rtl:space-x-reverse">
+          <img src="./VADDO IMAGES/color_logo-wm-lm_dimensions (1).png" class="h-20 rounded-xl" alt=""/>
+      </div>
+      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="index.html" class="block py-2 px-3 text-gray-900 bg-orange-100 rounded md:bg-transparent md:text-orange-500 md:p-0 dark:text-white md:dark:text-orange-500" aria-current="page">HOME</a>
+          </li>
+          <li class="dropdown dropdown-hover">
+            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-orange-500 dark:hover:text-white md:dark:hover:bg-transparent">ABOUT US</a>
+
+            <ul class="dropdown-content menu rounded-box z-[1] w-52 p-2 shadow">
+                <li> <a href="about-the-farmhouse.html" class="link hover:text-orange-500 no-underline text-gray-900">THE FARMHOUSE</a></li>
+                <li> <a href="about-the-dairy.html" class="link hover:text-orange-500 no-underline text-gray-900">THE DAIRY</a></li>
+            </ul>
+
+          </li>
+          <li>
+            <a href="ice-cream-resturants.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-orange-500 dark:hover:text-white md:dark:hover:bg-transparent">FOOD MENU</a>
+          </li>
+          <!-- <li>
+            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-orange-500 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+          </li> -->
+          <li>
+            <a href="contact-us.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-orange-500 dark:hover:text-white md:dark:hover:bg-transparent">Contact Us</a>
+          </li>
         </ul>
-    </nav>
+      </div>
+    </div>
+  </nav>
 
 
-    <!-- navbar & full background image section -->
+    <!-- banner & full background image section -->
 
-    <nav class="bg-gray-100 min-h-screen text-gray-600 p-12">
-        <nav class="">
-            <div class="navbar font-bold flex justify-around lg:flex-row-reverse">
-                <div class="">
-                    <img class="w-96 " src="./VADDO IMAGES/Vaddo-gardsmejeri-logo-vit-kopia.png" alt="">
+    <div class="bg-pink-100 min-h-screen text-gray-600 p-12">
+        <div class="">
+            <div class="font-bold flex justify-between max-sm:flex-col space-y-6">
+                <div>
+                    <a href="the-farmer-products.html" class="link hover:text-orange-500 no-underline text-gray-500 max-sm:flex justify-center">THE FARM'S PRODUCTS</a>
                 </div>
-                <div class="flex-none">
+                 
+                <div class="flex-none max-sm:flex justify-center">
                     <div class="dropdown dropdown-hover">
-                        <div  class=""><a class="link hover:text-zinc-500 no-underline">EAT & EXPERIENCE</a></div>
+                        <div  class=""><a class="link hover:text-orange-500 no-underline text-gray-500">EAT & EXPERIENCE</a></div>
                         <ul class="dropdown-content menu rounded-box z-[1] w-52 p-2 shadow">
-                          <li> <a href="eat-&-experience.html" class="link hover:text-zinc-500 no-underline">THE FARMER & THE BARGHER</a></li>
-                          <li> <a href="eat-&-experience2.html" class="link hover:text-zinc-500 no-underline">FARMER'S ICE-CREAM PARTY</a></li>
-                          <li> <a href="eat-&-experience3.html" class="link hover:text-zinc-500 no-underline">FARMER'S ICE-CREAM STALLS</a></li>
-                          <li> <a href="eat-&-experience4.html" class="link hover:text-zinc-500 no-underline">DAIRY CAFE & FARM SHOP</a></li>
-                          <li> <a href="" class="link hover:text-zinc-500 no-underline">EVENTS</a></li>
-                          <li> <a href="" class="link hover:text-orange-500 no-underline">CAMP WITH US</a></li>
-                          <li> <a href="" class="link hover:text-orange-500 no-underline">GROUPS</a></li>
-                          <li> <a href="" class="link hover:text-orange-500 no-underline">VISITOR MAPS</a></li>
+                          <li><a href="eat-&-experience.html" class="link hover:text-orange-500 no-underline text-gray-500">THE FARMER & THE BARGHER</a></li>
+                          <li> <a href="eat-&-experience2.html" class="link hover:text-orange-500 no-underline text-gray-500">FARMER'S ICE-CREAM PARTY</a></li>
+                          <li> <a href="eat-&-experience3.html" class="link hover:text-orange-500 no-underline text-gray-500">FARMER'S ICE-CREAM STALLS</a></li>
+                          <li> <a href="eat-&-experience4.html" class="link hover:text-orange-500 no-underline text-gray-500">DAIRY CAFE & FARM SHOP</a></li>
                         </ul>
                     </div>
                 </div>
@@ -80,7 +102,7 @@
 
             <!-- card translate rotate divison -->
 
-              <div class="grid grid-cols-6 gap-6 p-10">
+            <div class="grid grid-cols-6 gap-6 p-10 max-sm:grid-cols-1 space-y-6">
                 <a href="">
                     <button class="transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:duration-300 font-semibold">
                         <img class="w-12 h-12" src="./VADDO IMAGES/burgarcheddar_icon_red.png" alt="">CHEDDAR, GRILLED CHEESE AND SAUCE
@@ -120,13 +142,13 @@
     <!-- square & circle card display  heading card -->
 <div>              
     <div class="">
-        <div class="mt-28 p-6 flex justify-center space-x-24 lg:flex-row">
-            <img class="w-[450px] rounded-3xl"
-                src="./VADDO IMAGES/gardsost_shadow_thumb.png" class="max-w-sm rounded-lg" />
+        <div class="mt-28 p-6 md:flex justify-center md:space-x-24 lg:flex-row">
+            <img class="md:w-[450px] rounded-3xl"
+                src="./VADDO IMAGES/gardsost_shadow_thumb.png" class="max-w-sm rounded-lg"/>
             <div class="space-y-6">
                 <p class="font-bold text-center">KRAV organic</p>
-                <h1 class="text-4xl font-bold">Farm cheese Väddö Seasoned cheese</h1>
-                <p class="text-xl"> <i>
+                <h1 class="md:text-4xl font-bold">Farm cheese Väddö Seasoned cheese</h1>
+                <p class="md:text-xl"> <i>
                 KRAV-Organic medium-aged cheese with fenugreek. Creamy with notes of walnut  </i>
                 </p>
                 <hr class="ring-1 ring-slate-300">
@@ -137,7 +159,7 @@
     <!-- modal all main card container  -->
     <div class="">
 
-    <div class="flex justify-center gap-6">
+<div class="flex justify-center gap-6 max-sm:flex-col space-y-6">
     <!-- 1st square card container -->
     <!-- Open the modal using ID.showModal() method -->
 
@@ -328,10 +350,10 @@
       </form>
     </dialog>
 
-    </div>
+</div>
 
 
-    <div class="flex justify-around">
+<div class="flex justify-around max-sm:flex-col space-y-6">
     <!-- 5th square card container -->
     <!-- Open the modal using ID.showModal() method -->
 
@@ -574,75 +596,74 @@
     </div>
 
     <!-- close modal all main card container  -->
-    </div>
+</div>
  
 
-
-
-
-
     </div>
-</div>  
-        </nav>
-    </nav>
+   </div>  
+  </div>
+</div>
+
 </header>
 
 
-<!-- start footer -->
-
-<footer class="bg-gray-400 px-6 p-2 text-gray-50">
-    <div class="flex justify-center mt-12">
-        <img class="w-96" src="./VADDO IMAGES/Vaddo-gardsmejeri-logo-vit-kopia.png" alt="">
-    </div>
-
-    <hr class="mt-16 mb-16">
     
-    <div class="footer justify-around">
-        <nav>
-            <h6 class="footer-title text-xl">Information</h6>
-            <a class="link link-hover" href="">Refund Policy</a>
-            <a class="link link-hover" href="">Privacy Policy</a>
-            <a class="link link-hover" href="">Conditions of Use</a>
-            <a class="link link-hover" href="">About Us</a>
-            <a class="link link-hover" href="">Contact Us</a>
-          </nav>
-          <nav>
-            <h6 class="footer-title text-xl">Customer service</h6>
-            <a class="link link-hover" href="">Notices</a>
-            <a class="link link-hover" href="">Blog</a>
-            <a class="link link-hover" href="">Recently viewed products</a>
-          </nav>
-        <form>
-            <h6 class="footer-title text-xl">Follow us</h6>
-            <div class="flex space-x-3">
-              <a href="">
-                <img title="Facebook" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/facebook (2).jpeg" alt="">
-              </a>
-              <a href="">
-                <img title="Twiter" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/twiter.jpeg" alt="">
-              </a>
-              <a href="">
-                <img title="Youtube" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/youtube.jpeg" alt="">
-              </a>
-              <a href="">
-                <img title="Instagram" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/instagram.jpeg" alt="">
-              </a>
+    <!-- start footer -->
+    
+    <footer class="bg-gray-400 md:px-6 p-2 text-gray-50">
+        <div class="footer justify-around mt-28">
+            <nav>
+                <h6 class="footer-title md:text-xl">Information</h6>
+                <a class="link link-hover" href="">Refund Policy</a>
+                <a class="link link-hover" href="">Privacy Policy</a>
+                <a class="link link-hover" href="">Conditions of Use</a>
+                <a class="link link-hover" href="">About Us</a>
+                <a class="link link-hover" href="">Contact Us</a>
+              </nav>
+               
+            <form>
+                <h6 class="footer-title md:text-xl">Follow us</h6>
+                <div class="flex space-x-3">
+                  <a href="https://www.facebook.com">
+                    <img title="Facebook" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/th.jpeg" alt="">
+                  </a>
+                  <a href="https://www.twiter.com">
+                    <img title="Twiter" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/twiter orange.jpg" alt="">
+                  </a>
+                  <a href="https://www.Instagram.com">
+                    <img title=" Instagram" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/th (1).jpeg" alt="">
+                  </a>
+                  <a href="https://www.Tiktok.com">
+                    <img title="Tiktok" class="w-9 h-9 rounded-full" src="./VADDO IMAGES/th (2).jpeg" alt="">
+                  </a>
+                   
+                  </a>
+                </div>
+              </form>
+              <nav>
+                <h6 class="footer-title md:text-xl">Download our apps</h6>
+                <a href="https://play.google.com/store/apps?hl=en">
+                    <div class="flex items-center px-4 py-1 gap-2 bg-stone-50 border-solid border-2 rounded-lg hover:bg-gray-200">
+                        <div>
+                            <img src="./VADDO IMAGES/playstore.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="text-center md:text-xl text-gray-700">GET IT ON</p>
+                            <h3 class=" font-semibold md:text-2xl text-gray-700">Google Play</h3>
+                        </div>
+                    </div>
+                </a>
+            </nav>
             </div>
-          </form>
-          <nav>
-            <h6 class="footer-title text-xl">Download our apps</h6>
-            <a class="link link-hover" href="">
-                <img class="w-56 rounded-full" src="./VADDO IMAGES/th (10).jpeg" alt="">
-            </a>
-        </nav>
-        </div>
+            
+              <hr class="mt-10 mb-6">
         
-          <hr class="mt-10 mb-6">
+            <p class="mt-5 text-center text-gray-200">@All Rights Reserved,  <br>  2024, CODE ZONE 71.</p>
+        
+    </footer>
     
-        <p class="mt-5 text-center text-gray-200">@All Rights Reserved,  <br>  2024, Väddö Gårdsmejeri.</p>
     
-</footer>
-
+<!-- footer end -->
 
 </body>
 </html>
