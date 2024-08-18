@@ -82,25 +82,30 @@
         <div class="">
             <div class="font-bold flex justify-around max-sm:flex-col max-sm:space-y-6">
                 <div class="">
-                    <a href="the-farmer-products.html" class="link hover:text-orange-500 no-underline text-white max-sm:flex justify-center">THE FARM'S PRODUCTS</a>
+                    <a href="the-farmer-products.html" class="link hover:text-orange-500 no-underline text-white max-sm:flex max-sm:justify-center link-hover">THE FARM'S PRODUCTS</a>
                 </div>
-                 
-                <div class="flex-none">
-                    <div class="dropdown dropdown-hover">
-                        <div  class=""><a class="link hover:text-orange-500 no-underline text-white max-sm:flex justify-center">EAT & EXPERIENCE</a></div>
+                <!-- small device click dropdown menu -->
+
+                <div>
+                  <ul class="font-bold flex flex-col">
+                    <li class="dropdown dropdown-hover">
+                      <a href="#" class="block px-3 text-white md:hover:bg-transparent md:hover:text-orange-500 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-orange-500 dark:hover:text-white md:dark:hover:bg-transparent max-sm:flex max-sm:justify-center link-hover">EAT & EXPERIENCE</a>
                         <ul class="dropdown-content menu rounded-box z-[1] w-52 p-2 shadow">
                           <li><a href="eat-&-experience.html" class="link hover:text-orange-500 no-underline text-white">THE FARMER & THE BARGHER</a></li>
                           <li> <a href="eat-&-experience2.html" class="link hover:text-orange-500 no-underline text-white">FARMER'S ICE-CREAM PARTY</a></li>
                           <li> <a href="eat-&-experience3.html" class="link hover:text-orange-500 no-underline text-white">FARMER'S ICE-CREAM STALLS</a></li>
                           <li> <a href="eat-&-experience4.html" class="link hover:text-orange-500 no-underline text-white">DAIRY CAFE & FARM SHOP</a></li>
                         </ul>
-                    </div>
-                </div>
+                    </li>
+                  </ul>
+                </div>                
+ 
+
             </div>
 
             <hr class="mt-20">
 
-            <div class="mt-12 mb-24 space-y-6 md: p-16"> 
+            <div class="mt-40 mb-24 space-y-6 md:p-16"> 
                 <p class="md:py-12 font-bold md:text-xl">CHEW BY CHEW TOWARDS A BETTER FOOD CULTURE</p>
                 <h1 class="md:text-6xl font-bold">A REAL FARM!<h1>  
                 <p class="roboto-mono md:text-xl mt-16">Our KRAV organic farm is located on the island of Väddö in Roslagen. Here at Väddö Gårdsmejeri, <br> you get a unique experience from pasture to belly where you get to see up close how food is really made without shortcuts. Welcome!</p>
@@ -146,7 +151,7 @@
                                 </abbr>
                             </a>
                         </div>
-                        <img class="w-[540px]"
+                        <img class="md:w-[540px]"
                           src="./VADDO IMAGES/51968825818_844ec1c974_k-1024x683.jpg"/>
                     </div>
 
@@ -155,7 +160,7 @@
 
                     <div class="hero-content flex-col mt-12 mb-12 p-16 justify-around lg:flex-row-reverse">
                         <div>
-                            <img class="w-[540px]"
+                            <img class="md:w-[540px]"
                           src="./VADDO IMAGES/Bonden-960x960-1.png"/>
                         </div>
                         <div class="space-y-10">
@@ -174,20 +179,28 @@
             </section>
 
             <!-- star img logo -->
-            <section class="flex justify-end mb-10">
+            <section class="md:flex md:justify-end mb-10">
                 <img src="./VADDO IMAGES/EU-logo-jordbruksfonden-sv-v-150x150.png" alt="">
             </section>
 
             <!--total 4 img section -->
             <section class="bg-pink-100">
-                <div class="flex justify-around p-9 max-sm:flex-col space-y-6">
-                    <img class="w-96 max-sm:w-80" src="./VADDO IMAGES/52418213480_2c1a3b8e6c_w.jpg" alt="">
-                    <img class="w-96 max-sm:w-80" src="./VADDO IMAGES/52417263797_64f1da3dc9_w.jpg" alt="">
-                    <img class="w-96 max-sm:w-80" src="./VADDO IMAGES/Kor-960x960-1.png" alt="">
+                <div class="md:grid md:grid-cols-4 gap-6 p-9 max-sm:grid-cols-1 max-md:grid max-md:grid-cols-2">
+                    <div class="max-sm:grid max-sm:items-center max-md:grid max-md:items-center">
+                      <img class="max-sm:grid max-sm:items-center max-md:grid max-md:items-center" src="./VADDO IMAGES/52418213480_2c1a3b8e6c_w.jpg" alt="">
+                    </div>
+                    <div class="max-sm:mt-6 max-sm:mb-6 max-md:mt-6 max-md:mb-6">
+                      <img class="max-sm:grid max-sm:items-center" src="./VADDO IMAGES/52417263797_64f1da3dc9_w.jpg" alt="">
+                    </div>
+                    <div class="max-sm:grid max-sm:items-center">
+                      <img class="max-sm:grid max-sm:items-center max-md:grid max-md:items-center" src="./VADDO IMAGES/Kor-960x960-1.png" alt="">
+                    </div>
+                    <div class="">
+                      <img class="max-sm:grid max-sm:items-center max-md:grid max-md:items-center" src="./VADDO IMAGES/galleri_bondgarden_04.jpg" alt="">
+                    </div>
                 </div>
-                <div class="flex justify-center">
-                    <img class="w-96 mb-12 max-sm:w-80" src="./VADDO IMAGES/galleri_bondgarden_04.jpg" alt="">
-                </div>
+                
+                
             </section>
     </header>
   

@@ -83,25 +83,30 @@
   
               <div class="font-bold flex justify-between max-sm:flex-col max-sm:space-y-6">
                   <div>
-                      <a href="the-farmer-products.html" class="link hover:text-orange-500 no-underline text-white max-sm:flex justify-center">THE FARM'S PRODUCTS</a>
+                      <a href="the-farmer-products.html" class="link hover:text-orange-500 no-underline text-white max-sm:flex max-sm:justify-center">THE FARM'S PRODUCTS</a>
                   </div>
                    
-                  <div class="flex-none max-sm:flex justify-center">
-                      <div class="dropdown dropdown-hover">
-                          <div  class=""><a class="link hover:text-orange-500 no-underline text-white">EAT & EXPERIENCE</a></div>
-                          <ul class="dropdown-content menu rounded-box z-[1] w-52 p-2 shadow">
-                            <li><a href="eat-&-experience.html" class="link hover:text-orange-500 no-underline text-white">THE FARMER & THE BARGHER</a></li>
-                            <li> <a href="eat-&-experience2.html" class="link hover:text-orange-500 no-underline text-white">FARMER'S ICE-CREAM PARTY</a></li>
-                            <li> <a href="eat-&-experience3.html" class="link hover:text-orange-500 no-underline text-white">FARMER'S ICE-CREAM STALLS</a></li>
-                            <li> <a href="eat-&-experience4.html" class="link hover:text-orange-500 no-underline text-white">DAIRY CAFE & FARM SHOP</a></li>
-                          </ul>
-                      </div>
-                  </div>
+                <!-- small device click dropdown menu -->
+
+                <div>
+                  <ul class="font-bold flex flex-col">
+                    <li class="dropdown dropdown-hover">
+                      <a href="#" class="block px-3 text-white md:hover:bg-transparent md:hover:text-orange-500 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-orange-500 dark:hover:text-white md:dark:hover:bg-transparent max-sm:flex max-sm:justify-center link-hover">EAT & EXPERIENCE</a>
+                        <ul class="dropdown-content menu rounded-box z-[1] w-52 p-2 shadow">
+                          <li><a href="eat-&-experience.html" class="link hover:text-orange-500 no-underline text-white">THE FARMER & THE BARGHER</a></li>
+                          <li> <a href="eat-&-experience2.html" class="link hover:text-orange-500 no-underline text-white">FARMER'S ICE-CREAM PARTY</a></li>
+                          <li> <a href="eat-&-experience3.html" class="link hover:text-orange-500 no-underline text-white">FARMER'S ICE-CREAM STALLS</a></li>
+                          <li> <a href="eat-&-experience4.html" class="link hover:text-orange-500 no-underline text-white">DAIRY CAFE & FARM SHOP</a></li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+
               </div>
   
                 <hr class="mt-16">
   
-                <div class="mt-32">
+                <div class="mt-44">
                   <div class="flex-col lg:flex-row">
                     <div>
                       <p class="md:py-24 font-bold md:text-xl text-center">WELCOME FARM TO FEST</p>
@@ -124,20 +129,24 @@
             <section style="color: brown;" class="bg-pink-100">
               <div class="hero min-h-screen">
                 <div class="hero-content flex-col p-20 lg:flex-row-reverse max-sm:flex-col space-y-12">
-                  <img class="w-96 max-sm:w-56 "
+                  <div>
+                    <img class="w-96 max-sm:w-56 "
                     src="./VADDO IMAGES/card logo.png"/>
+                  </div>
                   <div class="space-y-10">
-                    <h1 class="md:text-5xl md:font-bold">BONDEN & BURGAREN</h1>
+                    <h1 class="md:text-5xl font-bold">BONDEN & BURGAREN</h1>
                     <p class="roboto-mono md:max-w-96">
                       At Bonden & Burgaren we serve smash burgers using the farm's own KRAV organic meat, the farm's unique organic burger cheddar and bread from a local baker. The dairy's KRAV-organic Grill Cheeseburger is on the menu as a vegetarian option and also as a side dish in the form of crispy deep-fried cubes. When our fantastic farm chefs build your burger, it will also be very tasty and a winning combo with the ingredients sustainability, quality, passion and culinary craftsmanship. Raw materials without unnecessary additives and transport. No frills just real. <br>
                       It is not the table reservation, but just passing by. The restaurant is cashless, which means that we only accept payment by card.
                     </p>
-                    <div class="flex md:space-x-24 max-sm:flex-col-reverse space-y-12">
-                      <abbr title="contact us">
-                        <a href="contact-us.html">
-                          <button style="color: brown;" class="btn btn-outline font-semibold md:text-xl mt-12 w-36">FIND HERE</button>
-                        </a>
-                      </abbr>
+                    <div class="flex md:space-x-24 max-sm:flex-col-reverse space-y-12 max-md:space-y-10 max-md:flex-col-reverse">
+                      <div>
+                        <abbr title="contact us">
+                          <a href="contact-us.html">
+                            <button style="color: brown;" class="btn btn-outline font-semibold md:text-xl mt-12 w-36">FIND HERE</button>
+                          </a>
+                        </abbr>
+                      </div>
                       <div>
                         <h2 class="font-semibold md:text-xl">Opening hours:</h2>
                         <p>Bonden & Burgaren is located by the water at Väddö Kanal and the address is Grisslehamnsvägen 47, Väddö <br> <br>
@@ -149,12 +158,19 @@
                 </div>
               </div>
 
-         
-              <div class="flex justify-around mt-20 max-sm:flex-col space-y-6">
-                <img class="w-80" src="./VADDO IMAGES/galleri_burgare_01.jpg" alt="">
-                <img class="w-80" src="./VADDO IMAGES/galleri_burgare_02.jpg" alt="">
-                <img class="w-80" src="./VADDO IMAGES/galleri_burgare_03.jpg" alt="">
-              </div>
+            <!-- 3 image part -->
+
+              <div class="bg-white md:grid md:grid-cols-3 gap-6 p-8 mt-8 mb-8 max-sm:grid-cols-1 max-md:grid max-md:grid-cols-1">
+                <div class="max-sm:grid max-sm:items-center max-md:grid max-md:items-center">
+                  <img class="max-sm:grid max-sm:items-center max-md:grid max-md:items-center" src="./VADDO IMAGES/galleri_burgare_01.jpg" alt="">
+                </div>
+                <div class="max-sm:mt-6 max-sm:mb-6 max-md:mt-6 max-md:mb-6">
+                  <img class="max-sm:grid max-sm:items-center" src="./VADDO IMAGES/galleri_burgare_02.jpg" alt="">
+                </div>
+                <div class="max-sm:grid max-sm:items-center">
+                  <img class="max-sm:grid max-sm:items-center max-md:grid max-md:items-center" src="./VADDO IMAGES/galleri_burgare_03.jpg" alt="">
+                </div>
+            </div>
               <hr class="mt-20">
             </section>
     </header>

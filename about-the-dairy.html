@@ -83,25 +83,30 @@
         <div class="">
             <div class="font-bold flex justify-around max-sm:flex-col max-sm:space-y-6 ">
                 <div>
-                    <a href="the-farmer-products.html" class="link hover:text-orange-500 no-underline text-white max-sm:flex justify-center max-sm:text-gray-950">THE FARM'S PRODUCTS</a>
+                    <a href="the-farmer-products.html" class="link hover:text-orange-500 no-underline text-white max-sm:flex justify-center max-sm:text-gray-950 link-hover">THE FARM'S PRODUCTS</a>
                 </div>
-                 
-                <div class="flex-none max-sm:flex justify-center">
-                    <div class="dropdown dropdown-hover">
-                        <div  class=""><a class="link hover:text-orange-500 no-underline text-white max-sm:text-gray-950">EAT & EXPERIENCE</a></div>
+
+                <!-- small device click dropdown menu -->
+
+                <div>
+                  <ul class="font-bold flex flex-col">
+                    <li class="dropdown dropdown-hover">
+                      <a href="#" class="block px-3 text-white md:hover:bg-transparent md:hover:text-orange-500 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-orange-500 dark:hover:text-white md:dark:hover:bg-transparent max-sm:text-gray-900 max-sm:flex max-sm:justify-center link-hover">EAT & EXPERIENCE</a>
                         <ul class="dropdown-content menu rounded-box z-[1] w-52 p-2 shadow">
                           <li><a href="eat-&-experience.html" class="link hover:text-orange-500 no-underline text-white max-sm:text-gray-950">THE FARMER & THE BARGHER</a></li>
                           <li> <a href="eat-&-experience2.html" class="link hover:text-orange-500 no-underline text-white max-sm:text-gray-950">FARMER'S ICE-CREAM PARTY</a></li>
                           <li> <a href="eat-&-experience3.html" class="link hover:text-orange-500 no-underline text-white max-sm:text-gray-950">FARMER'S ICE-CREAM STALLS</a></li>
                           <li> <a href="eat-&-experience4.html" class="link hover:text-orange-500 no-underline text-white max-sm:text-gray-950">DAIRY CAFE & FARM SHOP</a></li>
                         </ul>
-                    </div>
+                    </li>
+                  </ul>
                 </div>
+
             </div>
 
             <hr class="mt-12">
 
-            <div class="mt-12 mb-16 space-y-6 md:p-16 max-sm:text-gray-950"> 
+            <div class="mt-40 mb-16 space-y-6 md:p-16 max-sm:text-gray-950"> 
                 <p class="py-12 md:font-bold text-xl">FROM GARDEN TO STOMACH!</p>
                 <h1 class="md:text-6xl font-bold">WELCOME <br> TO THE DAIRY!<h1>  
                 <p class="roboto-mono md:text-xl mt-16 mb-8">
@@ -117,14 +122,16 @@
     </div>
 
             <!-- total 3 image text section -->
-            <section class="bg-pink-100 flex justify-around max-sm:flex-col">
+            <section class="bg-pink-100 grid grid-cols-3 max-sm:grid max-sm:grid-cols-1 max-md:grid max-md:grid-cols-1 max-lg:grid max-lg:grid-cols-1">
                 
                     <!-- HAPPY COWS GIVE THE HIGHEST QUALITY 1st img part -->
 
-                    <div style="color: rgb(124, 124, 6);" class="hero-content flex-col mt-20 p-16  justify-between">
-                        <img class="w-60"
+                    <div style="color: rgb(124, 124, 6);" class="hero-content flex-col p-16 mt-24 justify-between">
+                        <div>
+                          <img class="md:w-60"
                           src="./VADDO IMAGES/dariy1.png"/>
-                        <div class="space-y-10">
+                        </div>
+                        <div class="md:space-y-10">
                             <h1 class="md:text-3xl font-bold text-center">HAPPY COWS GIVE <br> THE HIGHEST <br> QUALITY</h1>
                             <p class="roboto-mono md:text-xl text-center">
                                 Our philosophy is as simple as it gets, healthy and happy cows come first. It provides the highest quality milk and thus the best products.
@@ -134,10 +141,12 @@
 
                     <!-- TRADITIONAL FARM & MODERN FOOD CRAFTSMANSHIP 2nd img part -->
 
-                    <div style="color: rgb(124, 124, 6);" class="hero-content flex-col mt-20 p-16  justify-between">
-                        <img class="w-60"
+                    <div style="color: rgb(124, 124, 6);" class="hero-content flex-col p-16 mt-24 justify-between">
+                        <div>
+                          <img class="md:w-60"
                           src="./VADDO IMAGES/dariy2.png"/>
-                        <div class="space-y-10">
+                        </div>
+                        <div class="md:space-y-10">
                             <h1 class="md:text-3xl font-bold text-center">TRADITIONAL FARM <br> & MODERN FOOD <br> CRAFTSMANSHIP</h1>
                             <p class="roboto-mono md:text-xl text-center">
                                 At the farm, we are still driven by the same values ​​as when we started in 1912. We believe that quality comes first and that the natural always beats the artificial. Our ingredients are of the highest quality, which in turn produces fantastic products.
@@ -147,10 +156,12 @@
 
                     <!-- TRUST THROUGH TRANSPARENCY 3rd img part -->
 
-                    <div style="color: rgb(124, 124, 6);" class="hero-content flex-col mt-20 p-16  justify-between">
-                        <img class="w-60"
+                    <div style="color: rgb(124, 124, 6);" class="hero-content flex-col p-16 mt-24 justify-between">
+                        <div>
+                          <img class="md:w-60"
                           src="./VADDO IMAGES/dariy3.png"/>
-                        <div class="space-y-10">
+                        </div>
+                        <div class="md:space-y-10">
                             <h1 class="md:text-3xl font-bold text-center">TRUST THROUGH <br> TRANSPARENCY</h1>
                             <p class="roboto-mono md:text-xl text-center">
                                 Here at Väddö, we offer a unique concept where you can closely follow food production at all stages - from the cows grazing in the pasture to the ice cream in your cup. Welcome!
@@ -161,12 +172,18 @@
 
 
             <!--total 4 img section -->
-            <section>
-                <div class="flex justify-around p-5 max-sm:flex-col space-y-3">
-                    <img class="w-96" src="./VADDO IMAGES/galleri_mejeri_01.jpg" alt="">
-                    <img class="w-96" src="./VADDO IMAGES/galleri_mejeri_02.jpg" alt="">
-                    <img class="w-96" src="./VADDO IMAGES/galleri_mejeri_03.jpg" alt="">
+            <section class="bg-pink-100 p-6">
+              <div class="bg-white md:grid md:grid-cols-3 gap-6 p-8 mt-8 mb-8 max-sm:grid-cols-1 max-md:grid max-md:grid-cols-1">
+                <div class="max-sm:grid max-sm:items-center max-md:grid max-md:items-center">
+                  <img class="max-sm:grid max-sm:items-center max-md:grid max-md:items-center" src="./VADDO IMAGES/galleri_mejeri_01.jpg" alt="">
                 </div>
+                <div class="max-sm:mt-6 max-sm:mb-6 max-md:mt-6 max-md:mb-6">
+                  <img class="max-sm:grid max-sm:items-center" src="./VADDO IMAGES/galleri_mejeri_02.jpg" alt="">
+                </div>
+                <div class="max-sm:grid max-sm:items-center">
+                  <img class="max-sm:grid max-sm:items-center max-md:grid max-md:items-center" src="./VADDO IMAGES/galleri_mejeri_03.jpg" alt="">
+                </div>
+            </div>
             </section>
     </header>
   
@@ -239,6 +256,39 @@
     
 <!-- footer end -->
 
+<ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900
+ dark:border-gray-700">
+<div class="flex-none bg-black">
+  <div class="dropdown dropdown-hover">
+      <div  class=""><a class="link hover:text-orange-500 no-underline text-white max-sm:flex max-sm:justify-center
+        
+        block py-2 px-3 text-gray-90 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-orange-500 dark:hover:text-white md:dark:hover:bg-transparent
+        
+        ">EAT & EXPERIENCE</a></div>
+      <ul class="dropdown-content menu rounded-box z-[1] w-52 p-2 shadow">
+        
+        
+        
+        
+        <li> <a href="eat-&-experience3.html" class="link hover:text-orange-500 no-underline text-black">FARMER'S ICE-CREAM STALLS</a></li>
+        <li> <a href="eat-&-experience4.html" class="link hover:text-orange-500 no-underline text-black">DAIRY CAFE & FARM SHOP</a></li>
+      </ul>
+  </div>
+</div>
+</ul>
+
+<ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900
+ dark:border-gray-700">
+  <li class="dropdown dropdown-hover">
+  <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-orange-500 dark:hover:text-white md:dark:hover:bg-transparent">eat and experience</a>
+  <ul class="dropdown-content menu rounded-box z-[1] w-52 p-2 shadow">
+    <li><a href="eat-&-experience.html" class="link hover:text-orange-500 no-underline text-black">THE FARMER & THE BARGHER</a></li>
+    <li> <a href="eat-&-experience2.html" class="link hover:text-orange-500 no-underline text-black">FARMER'S ICE-CREAM PARTY</a></li>
+    <li> <a href="eat-&-experience3.html" class="link hover:text-orange-500 no-underline text-black">FARMER'S ICE-CREAM STALLS</a></li>
+    <li> <a href="eat-&-experience4.html" class="link hover:text-orange-500 no-underline text-black">DAIRY CAFE & FARM SHOP</a></li>
+  </ul>
+  </li>
+</ul>
 
 
 </body>
